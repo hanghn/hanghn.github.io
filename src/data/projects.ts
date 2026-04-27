@@ -40,7 +40,7 @@ const data: Project[] = [
   {
     title: 'Digital Systems Design Projects',
     subtitle: 'FPGA · FSM · Single-Cycle RISC-V Processor',
-    image: '/images/projects/digital-systems.jpg',
+    image: '/images/projects/digital-systems.png',
     date: '2024-11-01',
     desc: 'Two hardware projects: (1) a railroad crossing controller FSM on an FPGA with minimized state logic and alternating flashing signals driven by a counter-based timing circuit; (2) a compact single-cycle RISC-V processor with instruction fetch, decode, execute, and register writeback, validated against manually traced register results.',
     tech: ['FPGA', 'RISC-V', 'Verilog', 'FSM', 'Digital Logic'],
