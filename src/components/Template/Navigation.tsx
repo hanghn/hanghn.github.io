@@ -18,8 +18,23 @@ export default function Navigation() {
 
   return (
     <header className="site-header">
-      <Link href="/" className="site-logo">
-        <span className="logo-text">Home</span>
+      <Link href="/" className="site-logo" aria-label="Home">
+        <svg
+          className="logo-icon"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M3 11.5 12 4l9 7.5" />
+          <path d="M5 10v10h14V10" />
+          <path d="M10 20v-6h4v6" />
+        </svg>
       </Link>
 
       <nav className="nav-links">
