@@ -32,7 +32,7 @@ const data: Project[] = [
   {
     title: 'Unix Shell',
     subtitle: 'C · fork/exec · pipes · I/O redirection',
-    image: '/images/projects/unix-shell.jpg',
+    image: '/images/projects/unix-shell.png',
     date: '2024-12-01',
     desc: 'Built a Unix shell from scratch in C with command parsing, process creation (fork/exec), I/O redirection, pipes, sequential execution, and built-in commands (cd, source, prev, help). Implemented using low-level system calls and validated with Valgrind for memory management.',
     tech: ['C', 'Linux', 'System Calls', 'Valgrind'],
