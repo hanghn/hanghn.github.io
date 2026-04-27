@@ -16,7 +16,7 @@ import { createPageMetadata } from '@/lib/metadata';
 export const metadata: Metadata = createPageMetadata({
   title: 'Resume',
   description:
-    "Michael D'Angelo's Resume. OpenAI, Promptfoo, Smile ID, Arthena, Matroid, Stanford ICME, YC alum.",
+    'Resume of Hang (Amber) Hang — Northeastern Khoury CS+Business student. TA, J&J MedTech intern, private-equity intern, technical projects in Python, Java, C, and RISC-V.',
   path: '/resume/',
 });
 
