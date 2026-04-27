@@ -12,7 +12,8 @@ export interface Project {
 const data: Project[] = [
   {
     title: 'S&P 500 ESG Risk & Valuation ML Pipeline',
-    subtitle: 'OLS, Polynomial Regression, PCA, K-Means — from scratch in NumPy',
+    subtitle:
+      'OLS, Polynomial Regression, PCA, K-Means — from scratch in NumPy',
     image: '/images/projects/sp500-esg.jpg',
     date: '2025-04-01',
     desc: 'Implemented Ordinary Least Squares and polynomial regression from scratch in NumPy via the normal equation on a 100-company S&P 500 dataset (Yahoo Finance API + BeautifulSoup), validated with hand-rolled Leave-One-Out Cross Validation (MSE, R², residual plots). Used PCA (>90% variance retained) and K-Means (k=4) to segment firms into interpretable ESG-financial risk tiers. Co-authored the final report with a 4-person team.',
@@ -24,7 +25,7 @@ const data: Project[] = [
     subtitle: 'Java · MVC · heuristic AI',
     image: '/images/projects/sanguine.jpg',
     date: '2025-03-01',
-    desc: 'A configurable two-player strategy card game inspired by Queen\'s Blood, built in Java over a ~6-week multi-phase semester project. Implemented board-state updates, scoring, turn-based gameplay, and file-driven deck management. Designed with MVC and interface-based abstractions for modularity, plus heuristic-driven AI players for card placement and row-score optimization.',
+    desc: "A configurable two-player strategy card game inspired by Queen's Blood, built in Java over a ~6-week multi-phase semester project. Implemented board-state updates, scoring, turn-based gameplay, and file-driven deck management. Designed with MVC and interface-based abstractions for modularity, plus heuristic-driven AI players for card placement and row-score optimization.",
     tech: ['Java', 'MVC', 'OOD', 'JUnit', 'AI Heuristics'],
     featured: true,
   },

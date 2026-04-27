@@ -22,10 +22,10 @@ export default function Hero() {
           >
             Northeastern&apos;s Khoury College
           </a>
-          , concentrating in Finance.
+          .
           <br />
-          Currently a TA for Foundations of Data Science. Previously interned
-          at Johnson &amp; Johnson and Advent International.
+          Currently a TA for Foundations of Data Science. Previously interned at
+          Johnson &amp; Johnson MedTech and a global private-equity firm.
           <br />
           <strong>
             Seeking Summer 2026 internships in data science, ML, fintech, or
@@ -36,7 +36,6 @@ export default function Hero() {
         <div className="hero-chips">
           <span className="hero-chip">Open to Summer 2026 Internships</span>
           <span className="hero-chip">Khoury · CS + Business</span>
-          <span className="hero-chip">Finance Concentration</span>
           <span className="hero-chip">Boston, MA</span>
         </div>
 

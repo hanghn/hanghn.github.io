@@ -43,9 +43,9 @@ const work: Position[] = [
     ],
   },
   {
-    name: 'Advent International',
+    name: 'Global Private-Equity Firm',
     position: 'Deal Cost Accounting Intern',
-    url: 'https://www.adventinternational.com',
+    url: '',
     startDate: '2024-02-01',
     endDate: '2024-06-01',
     summary: `Supported the Deal Cost team at a global private-equity firm with recurring and ad-hoc operations,
