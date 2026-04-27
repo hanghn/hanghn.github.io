@@ -28,8 +28,8 @@ export default function Hero() {
           Johnson &amp; Johnson MedTech and a global private-equity firm.
           <br />
           <strong>
-            Seeking Summer 2026 internships in data science, ML, fintech, or
-            software engineering.
+            Seeking Summer 2026 internships in data science, ML/AI, software
+            engineering, and similar fields. Open to chat! :)
           </strong>
         </p>
 
