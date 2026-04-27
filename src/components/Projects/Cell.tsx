@@ -1,4 +1,3 @@
-import dayjs from 'dayjs';
 import Image from 'next/image';
 
 import type { Project } from '@/data/projects';
@@ -9,7 +8,7 @@ interface CellProps {
 }
 
 export default function Cell({ data }: CellProps) {
-  const { title, subtitle, link, image, date, desc, tech, featured } = data;
+  const { title, subtitle, link, image, desc, tech, featured } = data;
 
   const hasLink = Boolean(link);
 
@@ -43,10 +42,6 @@ export default function Cell({ data }: CellProps) {
             ))}
           </div>
         )}
-
-        <time className="project-card-date" dateTime={date}>
-          {dayjs(date).format('YYYY')}
-        </time>
       </div>
     </>
   );
