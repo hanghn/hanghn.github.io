@@ -9,6 +9,7 @@ export interface Position {
   endDate?: string;
   summary?: string;
   highlights?: string[];
+  logo?: string;
 }
 
 const work: Position[] = [
@@ -16,6 +17,7 @@ const work: Position[] = [
     name: 'Northeastern University — Khoury College',
     position: 'TA, Foundations of Data Science (DS3000)',
     url: 'https://www.khoury.northeastern.edu',
+    logo: '/images/logos/northeastern.png',
     startDate: '2025-07-01',
     endDate: '2025-08-01',
     summary: `Teaching assistant for a required Data Science concentration course
@@ -30,6 +32,7 @@ const work: Position[] = [
     name: 'Johnson & Johnson MedTech',
     position: 'Orthopedics Offer Development (OOD) Analyst Intern',
     url: 'https://www.jnj.com',
+    logo: '/images/logos/jnj.png',
     startDate: '2025-01-01',
     endDate: '2025-06-01',
     summary: `Worked on the DePuy Synthes orthopedics business in Raynham, MA — a mix of contract analytics,
@@ -46,6 +49,7 @@ const work: Position[] = [
     name: 'Advent International',
     position: 'Deal Cost Options Intern',
     url: 'https://www.adventinternational.com',
+    logo: '/images/logos/advent.png',
     startDate: '2024-02-01',
     endDate: '2024-06-01',
     summary: `Supported the Deal Cost team at a global private-equity firm with recurring and ad-hoc operations,
@@ -60,6 +64,7 @@ const work: Position[] = [
     name: 'Northeastern University — NU Global Pathway Program',
     position: 'Global Student Ambassador',
     url: 'https://www.northeastern.edu',
+    logo: '/images/logos/northeastern.png',
     startDate: '2022-08-01',
     endDate: '2025-04-01',
     highlights: [
