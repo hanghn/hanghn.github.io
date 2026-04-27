@@ -12,14 +12,10 @@ I'm interested in the space where data science, software engineering, and financ
 
 # A Bit More About Me
 
-- I've spent time helping international students adjust to life in Boston as a Global Student Ambassador with NU's Global Pathway Program.
+- I've helped fellow international students adjust to life in Boston as a Global Student Ambassador with NU's Global Pathway Program.
 - Outside of school, I like exploring cafés, streetwear brands, and digging through GitHub for interesting open-source projects.
 
 # What I'm Looking For
 
-I'm actively seeking **Summer 2026 internships** in data science, machine learning, fintech, or software engineering — ideally roles where I can use Python, SQL, or systems-level skills against real business problems. I'm based in Boston but open to relocation, and I'm authorized to work in the U.S. without sponsorship now or in the future.
-
-# Get in Touch
-
-The fastest way to reach me is by email or LinkedIn — all are linked from the homepage. I usually reply within a day or two.
+I'm actively seeking **Summer 2026 internships** in data science, machine learning / AI, or software engineering — or any similar field that intersects with any of these. I'm based in Boston but open to relocation, and I'm authorized to work in the U.S. without sponsorship now or in the future.
 `;
