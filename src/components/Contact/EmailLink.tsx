@@ -1,4 +1,4 @@
-const EMAIL = 'hanghn559@gmail.com';
+const EMAIL = 'hang.h@northeastern.edu';
 
 export default function EmailLink() {
   const [prefix, domain] = EMAIL.split('@');
