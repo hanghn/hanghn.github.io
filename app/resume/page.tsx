@@ -29,13 +29,15 @@ export default function ResumePage() {
           <p className="resume-summary">
             Hi, I&apos;m Hang — I grew up in Shanghai and moved to Boston for
             college. I&apos;m a Computer Science + Business student at
-            Northeastern&apos;s Khoury College, graduating in April 2027.
-            Currently a TA for Foundations of Data Science (DS3000), and
-            previously interned at Johnson &amp; Johnson MedTech and a global
-            private-equity firm. I love working at the intersection of code,
-            data, and business — and I&apos;m looking for a Summer 2026
+            Northeastern&apos;s Khoury College, graduating in April 2027. I&apos;m
+            interested in AI applications across all fields and like building
+            automation tools for myself. Inside of school, I worked as a TA for
+            Khoury&apos;s DS concentration course (DS3000), and previously
+            interned at Johnson &amp; Johnson MedTech and Advent International,
+            a global private-equity firm. I love working at the intersection of
+            code, data, and business, and I&apos;m looking for a Summer 2026
             internship in data science, ML, fintech, or software engineering.
-            Take a look around; if anything sparks your interest, I&apos;d love
+            Take a look around — if anything sparks your interest, I&apos;d love
             to chat.
           </p>
         </header>

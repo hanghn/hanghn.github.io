@@ -8,7 +8,7 @@ I'm interested in the space where data science, software engineering, and financ
 
 - **Khoury College, Northeastern University** — BS in Computer Science + Business Administration. GPA: 3.64. Dean's List.
 - **TA for Foundations of Data Science (DS3000)** — running office hours and grading for 60+ students.
-- **Previously interned at Johnson & Johnson MedTech** as an Orthopedics Offer Development Analyst, and at a **global private-equity firm** in Deal Cost Accounting.
+- **Previously interned at Johnson & Johnson MedTech** as an Orthopedics Offer Development Analyst, and at **Advent International**, a global private-equity firm, in Deal Cost Accounting.
 
 # What I'm Working On
 
