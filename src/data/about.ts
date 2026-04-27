@@ -1,14 +1,14 @@
 export const aboutMarkdown = `# Intro
 
-I'm Hang Hang — I also go by Amber. I'm a Computer Science + Business student at [Northeastern's Khoury College](https://www.khoury.northeastern.edu), concentrating in Finance, graduating in April 2027.
+I'm Hang Hang — I also go by Amber. I'm a Computer Science + Business student at [Northeastern's Khoury College](https://www.khoury.northeastern.edu), graduating in April 2027.
 
 I'm interested in the space where data science, software engineering, and finance overlap — building tools that turn messy real-world data into something people can actually use to make decisions. I'm currently a TA for Foundations of Data Science (DS3000) at Khoury, where I help students work through Python, NumPy, pandas, and intro ML concepts.
 
 # Currently
 
-- **Khoury College, Northeastern University** — BS in Computer Science + Business Administration, Finance concentration. GPA: 3.64. Dean's List.
+- **Khoury College, Northeastern University** — BS in Computer Science + Business Administration. GPA: 3.64. Dean's List.
 - **TA for Foundations of Data Science (DS3000)** — running office hours and grading for 60+ students.
-- **Previously interned at Johnson & Johnson MedTech** as an Orthopedics Offer Development Analyst, and at **Advent International** in Deal Cost Accounting.
+- **Previously interned at Johnson & Johnson MedTech** as an Orthopedics Offer Development Analyst, and at a **global private-equity firm** in Deal Cost Accounting.
 
 # What I'm Working On
 
@@ -18,8 +18,8 @@ I'm interested in the space where data science, software engineering, and financ
 
 # A Bit More About Me
 
-- I grew up bilingual and have spent time helping international students adjust to life in Boston as a Global Student Ambassador.
-- Outside of school, I like exploring Boston cafés, reading, and finding the intersection between business problems and technical solutions.
+- I've spent time helping international students adjust to life in Boston as a Global Student Ambassador with NU's Global Pathway Program.
+- Outside of school, I like exploring cafés, streetwear brands, and digging through GitHub for interesting open-source projects.
 
 # What I'm Looking For
 
