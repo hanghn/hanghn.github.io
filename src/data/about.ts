@@ -1,8 +1,6 @@
 export const aboutMarkdown = `# Intro
 
-I'm Hang Hang — I also go by Amber. I'm a Computer Science + Business student at [Northeastern's Khoury College](https://www.khoury.northeastern.edu), graduating in April 2027.
-
-I'm interested in the space where data science, software engineering, and finance overlap — building tools that turn messy real-world data into something people can actually use to make decisions. I'm currently a TA for Foundations of Data Science (DS3000) at Khoury, where I help students work through Python, NumPy, pandas, and intro ML concepts.
+Hi, I'm Hang — I grew up in Shanghai and moved to Boston for college. I'm a Computer Science + Business student at [Northeastern's Khoury College](https://www.khoury.northeastern.edu), graduating in April 2027. I'm interested in AI applications across all fields and like building automation tools for myself. Inside of school, I worked as a TA for Khoury's DS concentration course (DS3000), and previously interned at Johnson & Johnson MedTech and Advent International, a global private-equity firm. I love working at the intersection of code, data, and business, and I'm looking for a Summer 2026 internship in data science, ML, fintech, or software engineering. Take a look around — if anything sparks your interest, I'd love to chat.
 
 # Currently
 
