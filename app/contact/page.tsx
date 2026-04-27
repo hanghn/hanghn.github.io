@@ -23,9 +23,6 @@ export default function ContactPage() {
         <div className="contact-content">
           <div className="contact-email-block">
             <EmailLink />
-            <p className="contact-hint">
-            I try to respond as fast as I can — usually within 1–3 days.
-          </p>
           </div>
 
           <div className="contact-divider">
