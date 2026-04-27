@@ -28,7 +28,6 @@ export default function ProjectsPage() {
 
         {featuredProjects.length > 0 && (
           <section className="projects-featured">
-            <h2 className="projects-section-title">Featured</h2>
             <div className="projects-grid projects-grid--featured">
               {featuredProjects.map((project) => (
                 <Cell data={project} key={project.title} />
@@ -39,7 +38,6 @@ export default function ProjectsPage() {
 
         {otherProjects.length > 0 && (
           <section className="projects-other">
-            <h2 className="projects-section-title">More</h2>
             <div className="projects-grid">
               {otherProjects.map((project) => (
                 <Cell data={project} key={project.title} />
