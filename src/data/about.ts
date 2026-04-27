@@ -10,7 +10,7 @@ I'm interested in the space where data science, software engineering, and financ
 
 # A Bit More About Me
 
-- I've helped fellow international students adjust to life in Boston as a Global Student Ambassador with NU's Global Pathway Program.
+- For over two years, I've helped fellow international students adjust to life in Boston as a Global Student Ambassador with NU's Global Pathway Program.
 - Outside of school, I like exploring cafés, streetwear brands, and digging through GitHub for interesting open-source projects.
 
 # What I'm Looking For
