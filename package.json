@@ -1,11 +1,11 @@
 {
   "name": "personal-site",
   "version": "4.1.0",
-  "homepage": "https://hanghn.github.io/personal-site",
+  "homepage": "https://hanghn.github.io",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hanghn/personal-site.git"
+    "url": "https://github.com/hanghn/hanghn.github.io.git"
   },
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
