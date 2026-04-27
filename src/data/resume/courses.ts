@@ -7,49 +7,51 @@ export interface Course {
 
 const NEU = 'Northeastern University';
 const NEU_CATALOG = 'https://catalog.northeastern.edu';
+const NEU_CATALOG_CS =
+  'https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/#coursestext';
 
 const courses: Course[] = [
   // Computer Science
   {
     title: 'Discrete Structures',
     number: 'CS 1800',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
     title: 'Fundamentals of CS I',
     number: 'CS 2500',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
     title: 'Fundamentals of CS II',
     number: 'CS 2510',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
     title: 'Object-Oriented Design',
     number: 'CS 3100',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
     title: 'Database Design',
     number: 'CS 3200',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
     title: 'Algorithms and Data',
     number: 'CS 3000',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
     title: 'Computer Systems',
     number: 'CS 3650',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   // Data Science
@@ -114,13 +116,13 @@ const courses: Course[] = [
   {
     title: 'Fundamentals of Software Engineering (scheduled)',
     number: 'CS 4530',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
     title: 'Artificial Intelligence (scheduled)',
     number: 'CS 4100',
-    link: NEU_CATALOG,
+    link: NEU_CATALOG_CS,
     university: NEU,
   },
 ];

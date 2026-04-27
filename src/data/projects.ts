@@ -23,7 +23,7 @@ const data: Project[] = [
   {
     title: 'Sanguine — Strategy Card Game',
     subtitle: 'Java · MVC · heuristic AI',
-    image: '/images/projects/sanguine.jpg',
+    image: '/images/projects/sanguine.png',
     date: '2025-03-01',
     desc: "A configurable two-player strategy card game inspired by Queen's Blood, built in Java over a ~6-week multi-phase semester project. Implemented board-state updates, scoring, turn-based gameplay, and file-driven deck management. Designed with MVC and interface-based abstractions for modularity, plus heuristic-driven AI players for card placement and row-score optimization.",
     tech: ['Java', 'MVC', 'OOD', 'JUnit', 'AI Heuristics'],
