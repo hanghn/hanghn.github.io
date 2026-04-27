@@ -8,13 +8,7 @@ I'm interested in the space where data science, software engineering, and financ
 
 - **Khoury College, Northeastern University** — BS in Computer Science + Business Administration. GPA: 3.64. Dean's List.
 - **TA for Foundations of Data Science (DS3000)** — running office hours and grading for 60+ students.
-- **Previously interned at Johnson & Johnson MedTech** as an Orthopedics Offer Development Analyst, and at **Advent International**, a global private-equity firm, in Deal Cost Accounting.
-
-# What I'm Working On
-
-- Building small interactive tools with Python, Jupyter, ipywidgets, and Voilà.
-- Strengthening my ML foundations — recently implemented OLS and polynomial regression from scratch in NumPy on an S&P 500 ESG dataset, and used PCA + K-Means to segment firms into ESG-financial risk tiers.
-- Lower-level systems work in C and RISC-V — built a Unix shell from scratch, designed an FSM-based railroad crossing controller and a single-cycle RISC-V processor on FPGA.
+- **Previously interned at Johnson & Johnson MedTech** as an Orthopedics Offer Development Analyst, and at **Advent International**, a global private-equity firm, in Deal Cost Options.
 
 # A Bit More About Me
 
