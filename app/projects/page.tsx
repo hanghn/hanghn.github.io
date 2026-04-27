@@ -6,9 +6,9 @@ import data from '@/data/projects';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Archive',
+  title: 'Projects',
   description:
-    "Early projects and experiments from Michael D'Angelo (2015 and earlier).",
+    'Technical projects by Hang (Amber) Hang — ML pipelines, Java OOD, C systems, and FPGA hardware design.',
   path: '/projects/',
 });
 

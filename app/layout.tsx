@@ -5,7 +5,7 @@ import Script from 'next/script';
 import GoogleAnalytics from '@/components/Template/GoogleAnalytics';
 import Navigation from '@/components/Template/Navigation';
 import ScrollToTop from '@/components/Template/ScrollToTop';
-import { AUTHOR_NAME, SITE_URL, TWITTER_HANDLE } from '@/lib/utils';
+import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
 import './tailwind.css';
 
 const sourceSans = Source_Sans_3({
@@ -27,7 +27,7 @@ const raleway = Raleway({
 });
 
 const siteDescription =
-  'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.';
+  'Computer Science + Business student at Northeastern University — Khoury College. Currently a TA for Foundations of Data Science. Seeking Summer 2026 internships in data science, ML, fintech, or software engineering.';
 
 export const metadata: Metadata = {
   title: {
@@ -37,13 +37,14 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     AUTHOR_NAME,
-    'OpenAI',
-    'Promptfoo',
-    'agent security',
-    'LLM security',
-    'machine learning',
-    'startup founder',
-    'YC',
+    'Northeastern University',
+    'Khoury College',
+    'Computer Science',
+    'Business',
+    'Data Science',
+    'Machine Learning',
+    'Boston',
+    'Summer 2026 Internship',
   ],
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,
@@ -66,8 +67,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: TWITTER_HANDLE,
-    creator: TWITTER_HANDLE,
     title: AUTHOR_NAME,
     description: siteDescription,
     images: ['/images/me.jpg'],
