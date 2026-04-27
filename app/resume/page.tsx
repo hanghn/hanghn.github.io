@@ -27,12 +27,16 @@ export default function ResumePage() {
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
           <p className="resume-summary">
-            Engineering leader with 15+ years building products across AI,
-            security, and infrastructure. Currently Member of the Technical
-            Staff at OpenAI, where I work on Promptfoo and agent security.
-            Previously co-founded Promptfoo, built it into an AI security
-            platform, and sold it to OpenAI. Stanford MS, YC alum, previously VP
-            Engineering.
+            Hi, I&apos;m Hang — I grew up in Shanghai and moved to Boston for
+            college. I&apos;m a Computer Science + Business student at
+            Northeastern&apos;s Khoury College, graduating in April 2027.
+            Currently a TA for Foundations of Data Science (DS3000), and
+            previously interned at Johnson &amp; Johnson MedTech and a global
+            private-equity firm. I love working at the intersection of code,
+            data, and business — and I&apos;m looking for a Summer 2026
+            internship in data science, ML, fintech, or software engineering.
+            Take a look around; if anything sparks your interest, I&apos;d love
+            to chat.
           </p>
         </header>
 
