@@ -14,7 +14,7 @@ const data: Project[] = [
     title: 'S&P 500 ESG Risk & Valuation ML Pipeline',
     subtitle:
       'OLS, Polynomial Regression, PCA, K-Means — from scratch in NumPy',
-    image: '/images/projects/sp500-esg.jpg',
+    image: '/images/projects/sp500-esg.png',
     date: '2025-04-01',
     desc: 'Implemented Ordinary Least Squares and polynomial regression from scratch in NumPy via the normal equation on a 100-company S&P 500 dataset (Yahoo Finance API + BeautifulSoup), validated with hand-rolled Leave-One-Out Cross Validation (MSE, R², residual plots). Used PCA (>90% variance retained) and K-Means (k=4) to segment firms into interpretable ESG-financial risk tiers. Co-authored the final report with a 4-person team.',
     tech: ['Python', 'NumPy', 'pandas', 'BeautifulSoup', 'PCA', 'K-Means'],
