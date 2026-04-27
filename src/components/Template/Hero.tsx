@@ -11,27 +11,33 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title">
-          <span className="hero-name">Michael D&apos;Angelo</span>
+          <span className="hero-name">Hang (Amber) Hang</span>
         </h1>
 
         <p className="hero-tagline">
-          Member of the Technical Staff at{' '}
-          <a href="https://openai.com" className="hero-highlight">
-            OpenAI
+          Computer Science + Business student at{' '}
+          <a
+            href="https://www.khoury.northeastern.edu"
+            className="hero-highlight"
+          >
+            Northeastern&apos;s Khoury College
           </a>
-          , where I work on{' '}
-          <a href="https://promptfoo.dev" className="hero-highlight">
-            Promptfoo
-          </a>{' '}
-          and agent security.
+          , concentrating in Finance.
           <br />
-          Previously co-founded, scaled, and sold Promptfoo to OpenAI.
+          Currently a TA for Foundations of Data Science. Previously interned
+          at Johnson &amp; Johnson and Advent International.
+          <br />
+          <strong>
+            Seeking Summer 2026 internships in data science, ML, fintech, or
+            software engineering.
+          </strong>
         </p>
 
         <div className="hero-chips">
-          <span className="hero-chip">YC Alum</span>
-          <span className="hero-chip">Stanford ICME</span>
-          <span className="hero-chip">Co-founded Arthena & Matroid</span>
+          <span className="hero-chip">Open to Summer 2026 Internships</span>
+          <span className="hero-chip">Khoury · CS + Business</span>
+          <span className="hero-chip">Finance Concentration</span>
+          <span className="hero-chip">Boston, MA</span>
         </div>
 
         <div className="hero-cta">
