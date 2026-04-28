@@ -7,8 +7,12 @@
   /* ===================
      FONT FAMILIES
      =================== */
-  --font-sans: var(--font-source-sans), 'Source Sans Pro', Helvetica, sans-serif;
-  --font-heading: var(--font-raleway), 'Raleway', Helvetica, sans-serif;
+  --font-sans:
+    var(--font-source-serif), 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman',
+    serif;
+  --font-heading:
+    var(--font-source-serif), 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman',
+    serif;
   --font-mono: 'Courier New', monospace;
 
   /* ===================
