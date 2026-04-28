@@ -1,0 +1,194 @@
+/* ========================================
+   RETRO ELEMENTS
+   88x31 platform badges, kaomoji decorations,
+   Win95-style panels — all opt-in, no global
+   side effects.
+   ======================================== */
+
+/* ---- 88x31 platform badges ---- */
+ul.retro-badges {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+ul.retro-badges li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.retro-badge {
+  display: inline-flex;
+  width: 88px;
+  height: 31px;
+  border: 1px solid #000;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  overflow: hidden;
+  background: #000;
+  image-rendering: pixelated;
+  transition:
+    transform 0.15s ease-out,
+    filter 0.15s ease-out;
+}
+
+.retro-badge:hover {
+  transform: translate(-1px, -1px);
+  filter: brightness(1.15);
+}
+
+.retro-badge-icon {
+  width: 31px;
+  height: 100%;
+  background: var(--badge-color, #444);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  text-transform: lowercase;
+  border-right: 1px solid #000;
+}
+
+.retro-badge-label {
+  flex: 1;
+  background: #111;
+  color: var(--badge-color, #fff);
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  letter-spacing: 0.05em;
+}
+
+/* ---- Kaomoji / ASCII decorations ---- */
+.kaomoji {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--color-fg-light);
+  margin: 0 0.35em;
+  user-select: none;
+}
+
+.kaomoji-block {
+  display: block;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--color-fg-light);
+  opacity: 0.65;
+  margin: 1.5rem 0;
+  letter-spacing: 0.05em;
+  white-space: pre;
+}
+
+/* ---- Win95-style panels ---- */
+.win-panel {
+  background: var(--color-bg);
+  border: 2px solid var(--color-fg-bold);
+  box-shadow:
+    inset -1px -1px 0 0 var(--color-fg-light),
+    inset 1px 1px 0 0 #fff,
+    4px 4px 0 0 var(--color-fg-bold);
+  margin: 1.25rem 0;
+  position: relative;
+}
+
+.win-panel-titlebar {
+  background: var(--panel-color, var(--color-accent));
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-fg-bold);
+}
+
+/* Color variants — set --panel-color on the .win-panel root */
+.win-panel--green {
+  --panel-color: #16a34a;
+}
+.win-panel--purple {
+  --panel-color: #7c3aed;
+}
+.win-panel--amber {
+  --panel-color: #d97706;
+}
+.win-panel--rose {
+  --panel-color: #e11d48;
+}
+.win-panel--teal {
+  --panel-color: #0891b2;
+}
+
+.win-panel-titlebar::after {
+  content: '× □ —';
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.win-panel-body {
+  padding: 1rem 1.25rem;
+}
+
+[data-theme='dark'] .win-panel {
+  box-shadow:
+    inset -1px -1px 0 0 #000,
+    inset 1px 1px 0 0 var(--color-fg-light),
+    4px 4px 0 0 #000;
+}
+
+/* ---- Online / offline indicator ---- */
+.online-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-fg-light);
+}
+
+.online-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #888;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.online-status--on .online-status-dot {
+  background: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+  animation: online-pulse 2s ease-in-out infinite;
+}
+
+.online-status--off .online-status-dot {
+  background: #ef4444;
+}
+
+@keyframes online-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}

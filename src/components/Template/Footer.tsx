@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import ContactIcons from '@/components/Contact/ContactIcons';
+import RetroBadges from '@/components/Contact/RetroBadges';
 import { AUTHOR_NAME } from '@/lib/utils';
 
 export default function Footer() {
@@ -27,12 +27,13 @@ export default function Footer() {
             <h4 id="footer-social-heading" className="footer-social-label">
               Connect
             </h4>
-            <ContactIcons />
+            <RetroBadges />
           </div>
         </div>
       </div>
 
       <p className="footer-copyright">
+        <span className="kaomoji">{'( ＾◡＾)っ'}</span>
         &copy; {new Date().getFullYear()} {AUTHOR_NAME}. Built with{' '}
         <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
           Next.js

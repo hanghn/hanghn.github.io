@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import OnlineStatus from './OnlineStatus';
 import ThemePortrait from './ThemePortrait';
 
 export default function Hero() {
@@ -25,6 +26,10 @@ export default function Hero() {
           <span className="hero-chip">Open to Summer 2026 Internships</span>
           <span className="hero-chip">Khoury · CS + Business</span>
           <span className="hero-chip">Boston, MA</span>
+        </div>
+
+        <div className="hero-status">
+          <OnlineStatus />
         </div>
 
         <div className="hero-cta">

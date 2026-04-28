@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Source_Serif_4 } from 'next/font/google';
 import Script from 'next/script';
 
+import CodeBackground from '@/components/Template/CodeBackground';
 import GoogleAnalytics from '@/components/Template/GoogleAnalytics';
 import Navigation from '@/components/Template/Navigation';
 import ScrollToTop from '@/components/Template/ScrollToTop';
@@ -90,6 +91,7 @@ export default function RootLayout({
       </head>
       <body>
         <ScrollToTop />
+        <CodeBackground />
         <div className="site-wrapper">
           <Navigation />
           {children}
