@@ -49,7 +49,7 @@
 /* Keep section subtitles smaller than the page title */
 .resume-content h3,
 .about-content h2 {
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 .projects-header {
