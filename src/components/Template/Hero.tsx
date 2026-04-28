@@ -168,11 +168,7 @@ export default function Hero() {
 
             <div className="retro-marquee" aria-hidden="true">
               <div className="retro-marquee-track">
-                <span>last updated: april 27 2026</span>
-                <span>·</span>
-                <span>seeking: summer 2026 internships</span>
-                <span>·</span>
-                <span>currently: studying @ khoury</span>
+                <span>last updated: april 28 2026</span>
                 <span>·</span>
                 <span>★ thanks for stopping by ★</span>
               </div>

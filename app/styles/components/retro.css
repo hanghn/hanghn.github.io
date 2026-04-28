@@ -188,10 +188,10 @@ ul.retro-badges li {
   background: rgba(0, 0, 0, 0.35);
   overflow: hidden;
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 1.4rem;
   letter-spacing: 0.08em;
   color: #fff;
-  padding: 8px 0;
+  padding: 10px 0;
   backdrop-filter: blur(4px);
 }
 
