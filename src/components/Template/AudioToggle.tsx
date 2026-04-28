@@ -25,8 +25,15 @@ export default function AudioToggle() {
 
     if (isOn) {
       audio.volume = TARGET_VOLUME;
-      audio.play().catch(() => {
-        setIsOn(false);
+      audio.play().catch((err) => {
+        // Browsers reject play() if a user gesture isn't satisfied
+        // (NotAllowedError). Roll back only in that case so transient
+        // load failures don't flip the toggle off prematurely.
+        if (err?.name === 'NotAllowedError') {
+          setIsOn(false);
+        } else {
+          console.warn('Audio play failed:', err);
+        }
       });
     } else {
       audio.pause();
@@ -52,7 +59,7 @@ export default function AudioToggle() {
           {isOn ? <SoundOnIcon /> : <SoundOffIcon />}
         </span>
       </button>
-      <audio ref={audioRef} src={AUDIO_SRC} loop preload="none" />
+      <audio ref={audioRef} src={AUDIO_SRC} loop preload="metadata" />
     </>
   );
 }

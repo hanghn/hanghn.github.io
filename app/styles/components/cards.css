@@ -252,13 +252,10 @@
   width: 56px;
   height: 56px;
   border-radius: var(--radius-md);
-  background: var(--color-bg-subtle, #fff);
-  border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 6px;
 }
 
 .job-logo img {
@@ -279,7 +276,6 @@
   .job-logo {
     width: 44px;
     height: 44px;
-    padding: 4px;
   }
 }
 
