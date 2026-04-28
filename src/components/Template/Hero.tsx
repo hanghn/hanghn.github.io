@@ -11,13 +11,14 @@ export default function Hero() {
   const panelRef = useRef<HTMLDivElement>(null);
 
   function handleDragStart(event: React.MouseEvent) {
-    const panel = panelRef.current;
+    const panel: HTMLDivElement | null = panelRef.current;
     if (!panel) return;
+    const target: HTMLDivElement = panel;
     event.preventDefault();
 
     const startX = event.clientX;
     const startY = event.clientY;
-    const computed = window.getComputedStyle(panel).transform;
+    const computed = window.getComputedStyle(target).transform;
     const matrix =
       computed && computed !== 'none' ? new DOMMatrixReadOnly(computed) : null;
     const offsetX = matrix ? matrix.m41 : 0;
@@ -26,7 +27,7 @@ export default function Hero() {
     function handleMove(ev: MouseEvent) {
       const dx = ev.clientX - startX + offsetX;
       const dy = ev.clientY - startY + offsetY;
-      panel.style.transform = `translate(${dx}px, ${dy}px)`;
+      target.style.transform = `translate(${dx}px, ${dy}px)`;
     }
 
     function handleUp() {
@@ -39,21 +40,22 @@ export default function Hero() {
   }
 
   function handleResizeStart(event: React.MouseEvent) {
-    const panel = panelRef.current;
+    const panel: HTMLDivElement | null = panelRef.current;
     if (!panel) return;
+    const target: HTMLDivElement = panel;
     event.preventDefault();
     event.stopPropagation();
 
     const startX = event.clientX;
     const startY = event.clientY;
-    const startWidth = panel.offsetWidth;
-    const startHeight = panel.offsetHeight;
+    const startWidth = target.offsetWidth;
+    const startHeight = target.offsetHeight;
 
     function handleMove(ev: MouseEvent) {
       const newWidth = Math.max(320, startWidth + (ev.clientX - startX));
       const newHeight = Math.max(400, startHeight + (ev.clientY - startY));
-      panel.style.width = `${newWidth}px`;
-      panel.style.height = `${newHeight}px`;
+      target.style.width = `${newWidth}px`;
+      target.style.height = `${newHeight}px`;
     }
 
     function handleUp() {
