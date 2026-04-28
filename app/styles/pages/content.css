@@ -55,8 +55,8 @@
 /* Two-column layout: sticky sidebar image on the left, content on the right */
 .about-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10rem;
+  grid-template-columns: minmax(360px, 540px) 1fr;
+  gap: 6rem;
   align-items: start;
 }
 
@@ -64,6 +64,9 @@
   position: sticky;
   top: calc(var(--header-height) + 2rem);
   align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .about-sidebar-figure {
@@ -196,8 +199,7 @@
 }
 
 .about-intro p {
-  max-width: 41rem;
-  font-size: clamp(1.04rem, 0.7vw + 0.95rem, 1.1rem);
+  max-width: 100%;
   line-height: 1.9;
   color: var(--color-fg-bold);
 }

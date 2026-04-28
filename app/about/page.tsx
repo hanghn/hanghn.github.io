@@ -29,6 +29,17 @@ export default function AboutPage() {
               />
               <figcaption>Where I grew up — Shanghai.</figcaption>
             </figure>
+
+            <figure className="about-sidebar-figure">
+              <img
+                src="/images/about/seafood-expo.jpg"
+                alt="At the Boston Seafood Expo translating between my parents and clients"
+              />
+              <figcaption>
+                Bilingual go-between for my parents and their clients at
+                Seafood Expo North America (Boston).
+              </figcaption>
+            </figure>
           </aside>
 
           <div className="about-main">
