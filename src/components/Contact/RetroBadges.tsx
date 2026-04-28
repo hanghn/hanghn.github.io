@@ -68,12 +68,12 @@ const itemStyle: CSSProperties = {
 
 const badgeStyle: CSSProperties = {
   display: 'inline-flex',
-  width: 88,
-  height: 31,
+  width: 168,
+  height: 56,
   border: '1px solid #000',
   fontFamily:
     'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace',
-  fontSize: 9,
+  fontSize: 18,
   fontWeight: 700,
   textTransform: 'uppercase',
   letterSpacing: '0.04em',
@@ -83,7 +83,7 @@ const badgeStyle: CSSProperties = {
 };
 
 const iconCellStyle = (color: string): CSSProperties => ({
-  width: 31,
+  width: 56,
   height: '100%',
   background: color,
   color: '#fff',
@@ -115,8 +115,8 @@ function BrandSvg({ icon }: BrandSvgProps) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox={`0 0 ${width} ${height}`}
-      width={16}
-      height={16}
+      width={28}
+      height={28}
       fill="currentColor"
       aria-hidden="true"
     >

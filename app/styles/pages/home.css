@@ -16,24 +16,28 @@
 .hero-panel {
   position: relative;
   z-index: 1;
-  width: clamp(480px, 82vw, 880px);
+  width: clamp(560px, 82vw, 880px);
   min-width: 480px;
-  min-height: 600px;
   max-width: 95vw;
-  max-height: 92vh;
   margin: 3rem auto 0;
   color: #fff;
   will-change: transform;
-  container-type: size;
+  container-type: inline-size;
   container-name: heropanel;
   display: flex;
   flex-direction: column;
+  overflow: visible;
+}
+
+.hero-panel .win-panel-titlebar {
+  flex-shrink: 0;
 }
 
 .hero-panel .win-panel-body {
+  /* Clip body content so resizing the panel actually hides overflow */
   flex: 1;
-  overflow: auto;
   min-height: 0;
+  overflow: hidden;
 }
 
 /* As the panel shrinks, scale/hide things so the content still fits */
@@ -52,23 +56,6 @@
   .hero-chip {
     font-size: 0.75rem !important;
     padding: 0.35rem 0.8rem !important;
-  }
-}
-
-@container heropanel (max-height: 480px) {
-  .retro-marquee {
-    display: none;
-  }
-  .hero-tagline {
-    display: none;
-  }
-  .hero-status {
-    margin-bottom: 0.75rem !important;
-  }
-  .hero-avatar {
-    width: 110px !important;
-    height: 110px !important;
-    margin-bottom: 0.75rem !important;
   }
 }
 
@@ -104,7 +91,7 @@
   margin: 0.75rem auto 0;
   text-align: center;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 1.4rem;
   letter-spacing: 0.08em;
   color: rgba(255, 255, 255, 0.85);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
@@ -133,9 +120,9 @@
 
 /* Portrait */
 .hero-avatar {
-  width: 220px;
-  height: 220px;
-  margin: 0 auto 2.5rem;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 2rem;
   border-radius: 50%;
   position: relative;
   box-shadow:
@@ -192,7 +179,7 @@
   flex-wrap: wrap;
   justify-content: center;
   font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 5cqi, 3.6rem);
+  font-size: clamp(3rem, 8cqi, 6rem);
   font-weight: var(--font-weight-black);
   letter-spacing: -0.03em;
   line-height: 1.05;
@@ -356,8 +343,8 @@ body:has(.home-page)::after {
   }
 
   .hero-avatar {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
     margin-bottom: 2rem;
   }
 
