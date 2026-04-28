@@ -19,7 +19,22 @@ export default function AboutPage() {
         <header className="about-header">
           <h1 className="page-title">About</h1>
         </header>
-        <AboutContent markdown={aboutMarkdown} />
+
+        <div className="about-layout">
+          <aside className="about-sidebar" aria-hidden="true">
+            <figure className="about-sidebar-figure">
+              <img
+                src="/images/about/IMG_2445.jpg"
+                alt="Hang Hang's hometown view"
+              />
+              <figcaption>Where I grew up — Shanghai.</figcaption>
+            </figure>
+          </aside>
+
+          <div className="about-main">
+            <AboutContent markdown={aboutMarkdown} />
+          </div>
+        </div>
       </section>
     </PageWrapper>
   );

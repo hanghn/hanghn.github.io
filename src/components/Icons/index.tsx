@@ -3,7 +3,7 @@ interface IconProps {
   className?: string;
 }
 
-export function SunIcon({ size = 32, className }: IconProps) {
+export function SunIcon({ size = 44, className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export function SunIcon({ size = 32, className }: IconProps) {
   );
 }
 
-export function MoonIcon({ size = 32, className }: IconProps) {
+export function MoonIcon({ size = 44, className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ export function MoonIcon({ size = 32, className }: IconProps) {
   );
 }
 
-export function SoundOnIcon({ size = 32, className }: IconProps) {
+export function SoundOnIcon({ size = 44, className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export function SoundOnIcon({ size = 32, className }: IconProps) {
   );
 }
 
-export function SoundOffIcon({ size = 32, className }: IconProps) {
+export function SoundOffIcon({ size = 44, className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

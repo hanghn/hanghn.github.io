@@ -25,9 +25,19 @@
   padding-bottom: 2rem;
 }
 
-/* Give the projects page extra room so 4 cards can sit comfortably in a row */
-.page-main:has(.projects-page) {
-  max-width: 80rem;
+/* Bump body text on every long-form page so paragraphs read bigger */
+.about-content,
+.resume-content,
+.contact-content,
+.project-card-desc,
+.project-card-title {
+  font-size: 1.4em;
+}
+
+/* Keep section subtitles smaller than the page title */
+.resume-content h3,
+.about-content h2 {
+  font-size: 1.2em;
 }
 
 .projects-header {
@@ -55,20 +65,8 @@
 
 .projects-grid {
   display: grid;
-  gap: 1.25rem;
-  grid-template-columns: 1fr;
-}
-
-@media screen and (min-width: 600px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 }
 
 .projects-grid--featured .project-card {

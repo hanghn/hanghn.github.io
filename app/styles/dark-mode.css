@@ -48,27 +48,8 @@
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* Dark mode component overrides using semantic tokens */
-[data-theme='dark'] .site-header {
-  background-color: color-mix(in srgb, var(--color-bg-alt) 90%, transparent);
-  border-bottom-color: var(--color-border);
-}
-
-[data-theme='dark'] .nav-link:hover {
-  background-color: var(--color-surface-active);
-}
-
-[data-theme='dark'] .nav-link.active {
-  background-color: var(--color-accent-hover);
-}
-
-[data-theme='dark'] .site-footer-new {
-  background: linear-gradient(
-    to bottom,
-    var(--color-bg-alt) 0%,
-    color-mix(in srgb, var(--color-bg-alt) 92%, black) 100%
-  );
-}
+/* Header + footer keep their Win95 light-chrome look in both themes
+   so the navy nav-link text stays readable; do not override here. */
 
 /* Homepage sections */
 [data-theme='dark'] .hero-chip {

@@ -47,7 +47,7 @@ const work: Position[] = [
   },
   {
     name: 'Advent International',
-    position: 'Deal Cost Options Intern',
+    position: 'Deal Cost Operations Intern',
     url: 'https://www.adventinternational.com',
     logo: '/images/logos/advent_international_logo.jpeg',
     startDate: '2024-02-01',

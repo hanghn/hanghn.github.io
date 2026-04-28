@@ -16,8 +16,21 @@
   transition: transform var(--duration-fast) var(--ease-out);
 }
 
+.nav-link--home {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+}
+
+.nav-link--home:hover .logo-icon,
 .site-logo:hover .logo-icon {
   transform: translateY(-2px);
+}
+
+.nav-spacer {
+  /* Mirrors the .nav-actions row width so the centered .nav-links truly sits in the middle */
+  width: var(--nav-actions-width, 9rem);
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -30,6 +43,8 @@
 
 .nav-links {
   display: none;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 0.625rem;
 }
 
@@ -42,7 +57,7 @@
 .nav-link {
   position: relative;
   padding: 0.75rem 1.125rem;
-  font-size: 1.4rem;
+  font-size: var(--text-md);
   font-weight: var(--font-weight-bold);
   color: var(--color-fg-bold);
   text-decoration: none;
@@ -107,8 +122,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
   padding: 0;
   background: transparent;
   border: none;
@@ -137,8 +152,8 @@
 }
 
 .theme-toggle-placeholder {
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
 }
 
 /* Hide hamburger on desktop */
