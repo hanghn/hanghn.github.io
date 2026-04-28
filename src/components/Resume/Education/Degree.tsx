@@ -9,9 +9,7 @@ export default function Degree({ data }: DegreeProps) {
     <article className="degree-container">
       <header>
         <h4 className="degree">{data.degree}</h4>
-        <p className="school">
-          <a href={data.link}>{data.school}</a>
-        </p>
+        <p className="school">{data.school}</p>
       </header>
     </article>
   );
