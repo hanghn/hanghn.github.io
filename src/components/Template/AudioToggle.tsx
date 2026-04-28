@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { SoundOffIcon, SoundOnIcon } from '@/components/Icons';
 
-const AUDIO_SRC = '/audio/lofi.mp3';
+const AUDIO_SRC = '/audio/Ariel Shalom - Teddy Bass.mp3';
 const STORAGE_KEY = 'audio-on';
 const TARGET_VOLUME = 0.35;
 
