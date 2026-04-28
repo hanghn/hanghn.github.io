@@ -154,29 +154,43 @@
   flex-wrap: wrap;
 }
 
-/* Background */
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+/* Full-page background image — overrides body's noise/gradient layers on home only */
+body:has(.home-page)::before {
+  background-image: url('/images/home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 
+body:has(.home-page)::after {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Hero no longer carries its own background */
+.hero-bg,
 .hero-gradient {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1200px;
-  height: 800px;
-  background: radial-gradient(
-    ellipse 100% 100% at 50% 50%,
-    var(--color-accent-light) 0%,
-    var(--color-accent-subtle) 15%,
-    color-mix(in srgb, var(--color-accent) 3%, transparent) 30%,
-    transparent 45%
-  );
-  filter: blur(100px);
-  opacity: 0.6;
+  display: none;
+}
+
+/* Hero text on home reads on top of the photo regardless of theme */
+.home-page .hero-name,
+.home-page .hero-tagline,
+.home-page .hero-tagline strong {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.home-page .hero-chip {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.home-page .hero-chip:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Mobile */
@@ -387,8 +401,8 @@
   background: var(--color-bg-offset);
 }
 
-[data-theme='dark'] .hero-gradient {
-  opacity: 0.3;
+[data-theme='dark'] body:has(.home-page)::after {
+  background: rgba(0, 0, 0, 0.45);
 }
 
 [data-theme='dark'] .home-section {
