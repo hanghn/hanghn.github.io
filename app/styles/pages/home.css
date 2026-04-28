@@ -16,9 +16,103 @@
 .hero-panel {
   position: relative;
   z-index: 1;
-  width: clamp(320px, 85vw, 900px);
+  width: clamp(320px, 78vw, 700px);
+  min-width: 320px;
+  min-height: 400px;
+  max-width: 95vw;
+  max-height: 90vh;
   margin: 3rem auto 0;
   color: #fff;
+  will-change: transform;
+  container-type: size;
+  container-name: heropanel;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-panel .win-panel-body {
+  flex: 1;
+  overflow: auto;
+  min-height: 0;
+}
+
+/* As the panel shrinks, scale/hide things so the content still fits */
+@container heropanel (max-width: 500px) {
+  .hero-avatar {
+    width: 130px !important;
+    height: 130px !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .hero-name {
+    font-size: clamp(1.4rem, 7cqi, 2.2rem) !important;
+  }
+  .hero-tagline {
+    font-size: 0.95rem !important;
+  }
+  .hero-chip {
+    font-size: 0.75rem !important;
+    padding: 0.35rem 0.8rem !important;
+  }
+}
+
+@container heropanel (max-height: 580px) {
+  .retro-marquee {
+    display: none;
+  }
+  .hero-status {
+    margin-bottom: 0.75rem !important;
+  }
+  .hero-avatar {
+    width: 120px !important;
+    height: 120px !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+@container heropanel (max-height: 460px) {
+  .hero-tagline {
+    display: none;
+  }
+}
+
+.hero-panel .win-panel-titlebar {
+  cursor: grab;
+  user-select: none;
+}
+
+.hero-panel .win-panel-titlebar:active {
+  cursor: grabbing;
+}
+
+/* Custom resize handle — Win95 grip dots in the bottom-right */
+.hero-resize {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  cursor: nwse-resize;
+  z-index: 3;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1.5px),
+    radial-gradient(rgba(0, 0, 0, 0.5) 1px, transparent 1.5px);
+  background-size: 4px 4px;
+  background-position:
+    0 0,
+    1px 1px;
+}
+
+.hero-hint {
+  display: block;
+  margin: 0.75rem auto 0;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  user-select: none;
+  pointer-events: none;
 }
 
 .hero-plant {
@@ -42,8 +136,8 @@
 
 /* Portrait */
 .hero-avatar {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   margin: 0 auto 2.5rem;
   border-radius: 50%;
   position: relative;
@@ -266,8 +360,8 @@ body:has(.home-page)::after {
   }
 
   .hero-avatar {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     margin-bottom: 2rem;
   }
 

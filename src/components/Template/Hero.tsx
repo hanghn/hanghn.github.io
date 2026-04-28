@@ -1,13 +1,73 @@
+'use client';
+
 import Link from 'next/link';
+import { useRef } from 'react';
 
 import CharacterAvatar from './CharacterAvatar';
 import OnlineStatus from './OnlineStatus';
 import ThemePortrait from './ThemePortrait';
 
 export default function Hero() {
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  function handleDragStart(event: React.MouseEvent) {
+    const panel = panelRef.current;
+    if (!panel) return;
+    event.preventDefault();
+
+    const startX = event.clientX;
+    const startY = event.clientY;
+    const computed = window.getComputedStyle(panel).transform;
+    const matrix =
+      computed && computed !== 'none' ? new DOMMatrixReadOnly(computed) : null;
+    const offsetX = matrix ? matrix.m41 : 0;
+    const offsetY = matrix ? matrix.m42 : 0;
+
+    function handleMove(ev: MouseEvent) {
+      const dx = ev.clientX - startX + offsetX;
+      const dy = ev.clientY - startY + offsetY;
+      panel.style.transform = `translate(${dx}px, ${dy}px)`;
+    }
+
+    function handleUp() {
+      document.removeEventListener('mousemove', handleMove);
+      document.removeEventListener('mouseup', handleUp);
+    }
+
+    document.addEventListener('mousemove', handleMove);
+    document.addEventListener('mouseup', handleUp);
+  }
+
+  function handleResizeStart(event: React.MouseEvent) {
+    const panel = panelRef.current;
+    if (!panel) return;
+    event.preventDefault();
+    event.stopPropagation();
+
+    const startX = event.clientX;
+    const startY = event.clientY;
+    const startWidth = panel.offsetWidth;
+    const startHeight = panel.offsetHeight;
+
+    function handleMove(ev: MouseEvent) {
+      const newWidth = Math.max(320, startWidth + (ev.clientX - startX));
+      const newHeight = Math.max(400, startHeight + (ev.clientY - startY));
+      panel.style.width = `${newWidth}px`;
+      panel.style.height = `${newHeight}px`;
+    }
+
+    function handleUp() {
+      document.removeEventListener('mousemove', handleMove);
+      document.removeEventListener('mouseup', handleUp);
+    }
+
+    document.addEventListener('mousemove', handleMove);
+    document.addEventListener('mouseup', handleUp);
+  }
+
   return (
     <section className="hero">
-      <div className="win-panel win-panel--glass hero-panel">
+      <div ref={panelRef} className="win-panel win-panel--glass hero-panel">
         <svg
           className="hero-plant"
           viewBox="0 0 32 40"
@@ -72,11 +132,13 @@ export default function Hero() {
           {/* Pot bottom edge */}
           <rect x="8" y="38" width="16" height="2" fill="#7c3f25" />
         </svg>
-        <div className="win-panel-titlebar">WELCOME.HTML</div>
+        <div className="win-panel-titlebar" onMouseDown={handleDragStart}>
+          WELCOME.HTML
+        </div>
         <div className="win-panel-body">
           <div className="hero-content">
             <div className="hero-avatar">
-              <ThemePortrait width={160} height={160} priority />
+              <ThemePortrait width={220} height={220} priority />
             </div>
 
             <h1 className="hero-title">
@@ -124,7 +186,16 @@ export default function Hero() {
             </div>
           </div>
         </div>
+        <div
+          className="hero-resize"
+          onMouseDown={handleResizeStart}
+          aria-hidden="true"
+        />
       </div>
+
+      <p className="hero-hint" aria-hidden="true">
+        ✦ drag the title bar to move • grab the bottom-right corner to resize ✦
+      </p>
 
       <div className="hero-bg" aria-hidden="true">
         <div className="hero-gradient" />
