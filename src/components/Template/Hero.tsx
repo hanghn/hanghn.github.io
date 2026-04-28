@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import OnlineStatus from './OnlineStatus';
+import RetroExtras from './RetroExtras';
 import ThemePortrait from './ThemePortrait';
 
 export default function Hero() {
@@ -46,6 +47,8 @@ export default function Hero() {
                 <span>★ thanks for stopping by ★</span>
               </div>
             </div>
+
+            <RetroExtras />
 
             <div className="hero-cta">
               <Link href="/about" className="button button-primary">

@@ -222,6 +222,65 @@ ul.retro-badges li {
   }
 }
 
+/* ---- Retro extras: visitor counter + mood widget ---- */
+.retro-extras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+}
+
+.retro-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #f5d442;
+  text-transform: uppercase;
+}
+
+.retro-counter-digits {
+  display: inline-block;
+  background: #000;
+  color: #4ade80;
+  padding: 4px 10px;
+  border: 2px inset rgba(255, 255, 255, 0.4);
+  font-family: var(--font-mono);
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 8px rgba(74, 222, 128, 0.7);
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.25);
+}
+
+.retro-counter-label {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.retro-mood {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.35em 0.85em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.retro-mood-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f472b6;
+  letter-spacing: 0.12em;
+}
+
 /* ---- Online / offline indicator ---- */
 .online-status {
   display: inline-flex;
