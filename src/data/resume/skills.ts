@@ -40,7 +40,7 @@ const skills: Skill[] = [
   },
   // Data Science
   {
-    title: 'pandas',
+    title: 'Pandas',
     competency: 5,
     category: ['Data Science'],
   },
@@ -50,12 +50,12 @@ const skills: Skill[] = [
     category: ['Data Science'],
   },
   {
-    title: 'matplotlib',
+    title: 'Matplotlib',
     competency: 4,
     category: ['Data Science'],
   },
   {
-    title: 'Jupyter / ipywidgets',
+    title: 'Jupyter Notebook',
     competency: 4,
     category: ['Data Science'],
   },

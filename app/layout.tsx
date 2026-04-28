@@ -9,7 +9,7 @@ import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
 import './tailwind.css';
 
 const sourceSerif = Source_Serif_4({
-  weight: ['400', '600', '700', '800'],
+  weight: ['400', '600', '700'],
   subsets: ['latin'],
   variable: '--font-source-serif',
   display: 'swap',
