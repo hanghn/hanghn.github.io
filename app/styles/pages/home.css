@@ -13,6 +13,168 @@
   text-align: center;
 }
 
+/* ---- Decorative scattered Win95 stickies ---- */
+.hero-sticky {
+  position: absolute;
+  z-index: 2;
+  background: rgba(20, 20, 24, 0.78);
+  color: #fff;
+  border: 2px solid #000;
+  box-shadow:
+    inset -1px -1px 0 0 #000,
+    inset 1px 1px 0 0 rgba(255, 255, 255, 0.4),
+    4px 4px 0 0 rgba(0, 0, 0, 0.55);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  width: 240px;
+  padding: 8px 12px 12px;
+  text-align: left;
+  transform: rotate(var(--rot, 0deg));
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
+.hero-sticky-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fbbf24;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.hero-sticky ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-sticky li {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.4;
+}
+
+.hero-sticky--todo {
+  top: 7rem;
+  left: 4vw;
+}
+
+.hero-sticky--now {
+  top: 12rem;
+  right: 5vw;
+  width: 230px;
+}
+
+.hero-sticky-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+}
+
+.hero-sticky-eq {
+  display: inline-flex;
+  align-items: end;
+  gap: 2px;
+  height: 14px;
+}
+
+.hero-sticky-eq span {
+  width: 3px;
+  background: #4ade80;
+  animation: hero-eq 0.9s ease-in-out infinite;
+}
+
+.hero-sticky-eq span:nth-child(1) {
+  height: 60%;
+  animation-delay: -0.2s;
+}
+.hero-sticky-eq span:nth-child(2) {
+  height: 100%;
+  animation-delay: -0.5s;
+}
+.hero-sticky-eq span:nth-child(3) {
+  height: 70%;
+  animation-delay: -0.8s;
+}
+.hero-sticky-eq span:nth-child(4) {
+  height: 90%;
+  animation-delay: -0.3s;
+}
+.hero-sticky-eq span:nth-child(5) {
+  height: 50%;
+  animation-delay: -0.6s;
+}
+
+@keyframes hero-eq {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+
+.hero-sticky-progress {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px inset rgba(255, 255, 255, 0.2);
+}
+
+.hero-sticky-progress > div {
+  height: 100%;
+  width: 35%;
+  background: #4ade80;
+  animation: hero-progress 22s linear infinite;
+}
+
+@keyframes hero-progress {
+  from { width: 5%; }
+  to { width: 95%; }
+}
+
+/* ---- Pixel-art stickers scattered around ---- */
+.hero-sticker {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.45));
+}
+
+.hero-sticker--floppy {
+  bottom: 9rem;
+  left: 6vw;
+  width: 70px;
+  height: 70px;
+  transform: rotate(-12deg);
+}
+
+.hero-sticker--cassette {
+  bottom: 7rem;
+  right: 6vw;
+  width: 96px;
+  height: 66px;
+  transform: rotate(8deg);
+}
+
+@media (max-width: 1100px) {
+  .hero-sticky,
+  .hero-sticker {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-sticky-eq span,
+  .hero-sticky-progress > div {
+    animation: none;
+  }
+}
+
 .hero-panel {
   position: relative;
   z-index: 1;
@@ -176,10 +338,11 @@
   display: inline-flex;
   align-items: center;
   gap: 0.2em;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   justify-content: center;
   font-family: var(--font-heading);
-  font-size: clamp(5rem, 12cqi, 10rem);
+  font-size: clamp(2.5rem, 11cqi, 9rem);
   font-weight: var(--font-weight-black);
   letter-spacing: -0.03em;
   line-height: 1.05;

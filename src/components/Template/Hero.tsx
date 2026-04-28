@@ -145,7 +145,7 @@ export default function Hero() {
 
             <h1 className="hero-title">
               <span className="hero-name">
-                Hang <CharacterAvatar /> (Amber) Hang
+                Hang <CharacterAvatar /> Hang
               </span>
             </h1>
 
