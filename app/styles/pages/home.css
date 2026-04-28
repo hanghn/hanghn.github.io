@@ -401,6 +401,10 @@ body:has(.home-page)::after {
   background: var(--color-bg-offset);
 }
 
+[data-theme='dark'] body:has(.home-page)::before {
+  opacity: 1;
+}
+
 [data-theme='dark'] body:has(.home-page)::after {
   background: rgba(0, 0, 0, 0.45);
 }
