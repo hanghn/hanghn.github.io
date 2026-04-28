@@ -15,21 +15,13 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Computer Science + Business student at{' '}
-          <a
-            href="https://www.khoury.northeastern.edu"
-            className="hero-highlight"
-          >
-            Northeastern&apos;s Khoury College
-          </a>
-          .
+          Welcome to my corner of the internet.
           <br />
-          Currently a TA for Foundations of Data Science. Previously interned at
-          Johnson &amp; Johnson MedTech and a global private-equity firm.
+          Click around to see the projects, work, and ideas I&apos;ve been
+          exploring.
           <br />
           <strong>
-            Seeking Summer 2026 internships in data science, ML/AI, software
-            engineering, and similar fields. Open to chat! :)
+            Head to About for the full story — or jump straight to Projects.
           </strong>
         </p>
 
