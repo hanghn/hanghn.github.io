@@ -13,9 +13,16 @@
   text-align: center;
 }
 
-.hero-content {
+.hero-panel {
   position: relative;
   z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.hero-content {
+  position: relative;
   max-width: 680px;
   margin: 0 auto;
 }
@@ -186,7 +193,7 @@ body:has(.home-page)::before {
 }
 
 body:has(.home-page)::after {
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 /* Hero no longer carries its own background */
@@ -441,7 +448,7 @@ body:has(.home-page)::after {
 }
 
 [data-theme='dark'] body:has(.home-page)::after {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 [data-theme='dark'] .home-section {
