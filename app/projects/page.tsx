@@ -23,10 +23,15 @@ export default function ProjectsPage() {
           </p>
         </header>
 
-        <div className="projects-grid">
-          {data.map((project) => (
-            <Cell data={project} key={project.title} />
-          ))}
+        <div className="win-panel">
+          <div className="win-panel-titlebar">PROJECTS.EXE</div>
+          <div className="win-panel-body">
+            <div className="projects-grid">
+              {data.map((project) => (
+                <Cell data={project} key={project.title} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </PageWrapper>

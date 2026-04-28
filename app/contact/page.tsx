@@ -20,16 +20,21 @@ export default function ContactPage() {
           <h1 className="page-title">Get in Touch</h1>
         </header>
 
-        <div className="contact-content">
-          <div className="contact-email-block">
-            <EmailLink />
-          </div>
+        <div className="win-panel win-panel--rose">
+          <div className="win-panel-titlebar">CONTACT.MSG</div>
+          <div className="win-panel-body">
+            <div className="contact-content">
+              <div className="contact-email-block">
+                <EmailLink />
+              </div>
 
-          <div className="contact-divider">
-            <span>or find me on</span>
-          </div>
+              <div className="contact-divider">
+                <span>or find me on</span>
+              </div>
 
-          <ContactIcons />
+              <ContactIcons />
+            </div>
+          </div>
         </div>
       </section>
     </PageWrapper>

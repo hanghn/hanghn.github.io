@@ -107,3 +107,50 @@
     }
   }
 }
+
+/* ========================================
+   FLOATING CODE-SYMBOL BACKGROUND
+   Drifts upward on every page except home
+   (where the coastal photo lives instead).
+   ======================================== */
+.code-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.code-symbol {
+  position: absolute;
+  bottom: -10vh;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  opacity: 0.22;
+  white-space: nowrap;
+  animation-name: code-symbol-float;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@keyframes code-symbol-float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-115vh);
+  }
+}
+
+/* Hide on the home page — the coastal photo handles atmosphere there. */
+body:has(.home-page) .code-bg {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .code-symbol {
+    animation: none;
+    display: none;
+  }
+}

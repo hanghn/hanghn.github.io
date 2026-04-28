@@ -31,19 +31,39 @@ export default function ResumePage() {
 
         <div className="resume-content">
           <section id="experience" className="resume-section">
-            <Experience data={work} />
+            <div className="win-panel win-panel--amber">
+              <div className="win-panel-titlebar">EXPERIENCE.LOG</div>
+              <div className="win-panel-body">
+                <Experience data={work} />
+              </div>
+            </div>
           </section>
 
           <section id="education" className="resume-section">
-            <Education data={degrees} />
+            <div className="win-panel win-panel--green">
+              <div className="win-panel-titlebar">EDUCATION.DOC</div>
+              <div className="win-panel-body">
+                <Education data={degrees} />
+              </div>
+            </div>
           </section>
 
           <section id="skills" className="resume-section">
-            <Skills skills={skills} categories={categories} />
+            <div className="win-panel win-panel--purple">
+              <div className="win-panel-titlebar">SKILLS.DAT</div>
+              <div className="win-panel-body">
+                <Skills skills={skills} categories={categories} />
+              </div>
+            </div>
           </section>
 
           <section id="courses" className="resume-section">
-            <Courses data={courses} />
+            <div className="win-panel win-panel--teal">
+              <div className="win-panel-titlebar">COURSES.LST</div>
+              <div className="win-panel-body">
+                <Courses data={courses} />
+              </div>
+            </div>
           </section>
         </div>
       </section>

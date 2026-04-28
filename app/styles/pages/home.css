@@ -123,7 +123,13 @@
   gap: 0.625rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-status {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .hero-chip {
