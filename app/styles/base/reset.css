@@ -125,9 +125,10 @@
   position: absolute;
   bottom: -10vh;
   font-family: var(--font-mono);
-  color: var(--color-accent);
-  opacity: 0.22;
+  font-weight: 600;
+  opacity: 0.18;
   white-space: nowrap;
+  text-shadow: 0 0 4px currentColor;
   animation-name: code-symbol-float;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
