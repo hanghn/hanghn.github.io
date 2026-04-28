@@ -17,12 +17,8 @@ export default function Hero() {
         <p className="hero-tagline">
           Welcome to my corner of the internet.
           <br />
-          Click around to see the projects, work, and ideas I&apos;ve been
-          exploring.
-          <br />
-          <strong>
-            Head to About for the full story — or jump straight to Projects.
-          </strong>
+          Think of this as my scrapbook — projects, experiments, half-formed
+          thoughts (maybe?).
         </p>
 
         <div className="hero-chips">
