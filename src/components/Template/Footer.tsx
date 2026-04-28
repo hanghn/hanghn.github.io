@@ -1,36 +1,11 @@
 import Link from 'next/link';
 
 import ContactIcons from '@/components/Contact/ContactIcons';
-import { AUTHOR_NAME } from '@/lib/utils';
-
-import ThemePortrait from './ThemePortrait';
 
 export default function Footer() {
   return (
     <footer className="site-footer-new">
       <div className="footer-content">
-        <div className="footer-identity">
-          <Link href="/" className="footer-avatar">
-            <ThemePortrait width={80} height={80} />
-          </Link>
-          <div className="footer-info">
-            <h3>{AUTHOR_NAME}</h3>
-            <p className="footer-role">
-              Northeastern University — Khoury College
-            </p>
-            <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} ·{' '}
-              <a
-                href="https://github.com/hanghn/hanghn.github.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source
-              </a>
-            </p>
-          </div>
-        </div>
-
         <div className="footer-right">
           <nav className="footer-links" aria-labelledby="footer-links-heading">
             <h4 id="footer-links-heading" className="footer-links-label">
@@ -55,6 +30,17 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <p className="footer-copyright">
+        &copy; {new Date().getFullYear()} ·{' '}
+        <a
+          href="https://github.com/hanghn/hanghn.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source
+        </a>
+      </p>
     </footer>
   );
 }

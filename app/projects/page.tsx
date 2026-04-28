@@ -13,11 +13,8 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function ProjectsPage() {
-  const featuredProjects = data.filter((p) => p.featured);
-  const otherProjects = data.filter((p) => !p.featured);
-
   return (
-    <PageWrapper>
+    <PageWrapper mainClassName="page-main--wide">
       <section className="projects-page">
         <header className="projects-header">
           <h1 className="page-title">Projects</h1>
@@ -26,25 +23,11 @@ export default function ProjectsPage() {
           </p>
         </header>
 
-        {featuredProjects.length > 0 && (
-          <section className="projects-featured">
-            <div className="projects-grid projects-grid--featured">
-              {featuredProjects.map((project) => (
-                <Cell data={project} key={project.title} />
-              ))}
-            </div>
-          </section>
-        )}
-
-        {otherProjects.length > 0 && (
-          <section className="projects-other">
-            <div className="projects-grid">
-              {otherProjects.map((project) => (
-                <Cell data={project} key={project.title} />
-              ))}
-            </div>
-          </section>
-        )}
+        <div className="projects-grid">
+          {data.map((project) => (
+            <Cell data={project} key={project.title} />
+          ))}
+        </div>
       </section>
     </PageWrapper>
   );
