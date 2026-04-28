@@ -4,7 +4,7 @@ I grew up in Shanghai and moved to Boston for college. I'm a Computer Science + 
 
 # Currently
 
-- **Khoury College, Northeastern University** — BS in Computer Science + Business Administration. GPA: 3.64. Dean's List.
+- **BS CS + Business** at Khoury, Northeastern · GPA 3.64 · Dean's List.
 
 # A Bit More About Me
 
