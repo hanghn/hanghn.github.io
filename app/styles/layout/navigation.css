@@ -9,6 +9,17 @@
   text-decoration: none;
 }
 
+.logo-icon {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.45));
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.site-logo:hover .logo-icon {
+  transform: translateY(-2px);
+}
+
 .logo-text {
   font-family: var(--font-heading);
   font-size: var(--text-lg);
@@ -31,7 +42,7 @@
 .nav-link {
   position: relative;
   padding: 0.75rem 1.125rem;
-  font-size: 1.0625rem;
+  font-size: 1.4rem;
   font-weight: var(--font-weight-bold);
   color: var(--color-fg-bold);
   text-decoration: none;

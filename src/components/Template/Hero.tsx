@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import CharacterAvatar from './CharacterAvatar';
 import OnlineStatus from './OnlineStatus';
 import ThemePortrait from './ThemePortrait';
 
@@ -7,6 +8,70 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="win-panel win-panel--glass hero-panel">
+        <svg
+          className="hero-plant"
+          viewBox="0 0 32 40"
+          shapeRendering="crispEdges"
+          aria-hidden="true"
+        >
+          {/* Pixel-art pothos in a terracotta pot — chunky 16-bit style */}
+          {/* Dark green leaves (back layer) */}
+          <g fill="#2c6e3a">
+            <rect x="4" y="14" width="2" height="2" />
+            <rect x="6" y="12" width="2" height="2" />
+            <rect x="8" y="10" width="2" height="2" />
+            <rect x="6" y="14" width="2" height="2" />
+            <rect x="24" y="12" width="2" height="2" />
+            <rect x="26" y="14" width="2" height="2" />
+            <rect x="22" y="14" width="2" height="2" />
+          </g>
+          {/* Mid green leaves */}
+          <g fill="#41a256">
+            <rect x="10" y="8" width="2" height="2" />
+            <rect x="8" y="12" width="2" height="2" />
+            <rect x="10" y="14" width="2" height="2" />
+            <rect x="12" y="12" width="2" height="2" />
+            <rect x="20" y="8" width="2" height="2" />
+            <rect x="22" y="12" width="2" height="2" />
+            <rect x="20" y="14" width="2" height="2" />
+            <rect x="18" y="12" width="2" height="2" />
+            <rect x="14" y="6" width="2" height="2" />
+            <rect x="16" y="6" width="2" height="2" />
+            <rect x="14" y="14" width="2" height="2" />
+            <rect x="16" y="14" width="2" height="2" />
+          </g>
+          {/* Bright leaves */}
+          <g fill="#6dd17e">
+            <rect x="12" y="8" width="2" height="2" />
+            <rect x="14" y="10" width="2" height="2" />
+            <rect x="16" y="10" width="2" height="2" />
+            <rect x="18" y="8" width="2" height="2" />
+            <rect x="12" y="4" width="2" height="2" />
+            <rect x="18" y="4" width="2" height="2" />
+            <rect x="14" y="2" width="2" height="2" />
+            <rect x="16" y="2" width="2" height="2" />
+          </g>
+          {/* Variegation highlights */}
+          <g fill="#cbe8ad">
+            <rect x="14" y="8" width="2" height="2" />
+            <rect x="16" y="8" width="2" height="2" />
+            <rect x="10" y="12" width="2" height="2" />
+            <rect x="20" y="12" width="2" height="2" />
+          </g>
+          {/* Soil */}
+          <rect x="6" y="22" width="20" height="2" fill="#3a2010" />
+          {/* Pot rim (top) */}
+          <rect x="4" y="24" width="24" height="2" fill="#8e4828" />
+          <rect x="4" y="22" width="24" height="2" fill="#9c5132" />
+          {/* Pot body */}
+          <rect x="6" y="26" width="20" height="12" fill="#c97553" />
+          {/* Pot shadow */}
+          <rect x="6" y="36" width="20" height="2" fill="#a85c3f" />
+          {/* Pot highlights */}
+          <rect x="8" y="28" width="2" height="6" fill="#dc8a6a" />
+          {/* Pot bottom edge */}
+          <rect x="8" y="38" width="16" height="2" fill="#7c3f25" />
+        </svg>
         <div className="win-panel-titlebar">WELCOME.HTML</div>
         <div className="win-panel-body">
           <div className="hero-content">
@@ -15,7 +80,9 @@ export default function Hero() {
             </div>
 
             <h1 className="hero-title">
-              <span className="hero-name">Hang (Amber) Hang</span>
+              <span className="hero-name">
+                Hang <CharacterAvatar /> (Amber) Hang
+              </span>
             </h1>
 
             <p className="hero-tagline">
