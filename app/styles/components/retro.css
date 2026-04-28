@@ -107,11 +107,11 @@ ul.retro-badges li {
   background: var(--panel-color, var(--color-accent));
   color: #fff;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 4px 8px;
+  padding: 6px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
