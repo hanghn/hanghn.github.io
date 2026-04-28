@@ -23,14 +23,20 @@
   max-width: 64rem;
 }
 
-/* Wide pages — resume / projects / contact / about — break out of the default cap */
+/* Wide pages — resume / contact / about */
 .page-main:has(.resume-page),
-.page-main:has(.projects-page),
 .page-main:has(.contact-page),
 .page-main:has(.about-page) {
   max-width: min(99vw, 1900px);
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+/* Projects gets even more room */
+.page-main:has(.projects-page) {
+  max-width: 100vw;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 @media screen and (min-width: 736px) {

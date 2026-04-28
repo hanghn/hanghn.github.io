@@ -28,10 +28,22 @@
 /* Bump body text on every long-form page so paragraphs read bigger */
 .about-content,
 .resume-content,
-.contact-content,
-.project-card-desc,
-.project-card-title {
+.contact-content {
   font-size: 1.4em;
+}
+
+.project-card-title {
+  font-size: 1.85em;
+}
+
+.project-card-desc {
+  font-size: 1.75em;
+}
+
+.project-card-subtitle,
+.project-card-date,
+.project-card-tech {
+  font-size: 1.35em;
 }
 
 /* Keep section subtitles smaller than the page title */
@@ -66,7 +78,7 @@
 .projects-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
 }
 
 .projects-grid--featured .project-card {
@@ -171,13 +183,13 @@
 }
 
 .project-card-subtitle {
-  font-size: var(--text-sm);
+  font-size: 1.55em;
   color: var(--color-fg-light);
   font-weight: var(--font-weight-medium);
 }
 
 .project-card-desc {
-  font-size: var(--text-base);
+  font-size: 1.75em;
   color: var(--color-fg);
   margin-bottom: 1.25rem;
   line-height: var(--leading-normal);
