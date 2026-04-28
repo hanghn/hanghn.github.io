@@ -52,8 +52,8 @@ export default function CharacterAvatar() {
       ref={svgRef}
       className="character-avatar"
       viewBox="0 0 100 100"
-      width="clamp(48px, 9cqi, 96px)"
-      height="clamp(48px, 9cqi, 96px)"
+      width="clamp(110px, 16cqi, 220px)"
+      height="clamp(110px, 16cqi, 220px)"
       aria-hidden="true"
     >
       {/* Wolf cut — longer back layers with choppy ends */}
