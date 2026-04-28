@@ -168,7 +168,7 @@ ul.retro-badges li {
 
 /* Translucent variant — used over the home photo */
 .win-panel--glass {
-  background: rgba(15, 15, 18, 0.55);
+  background: rgba(15, 15, 18, 0.18);
   border-color: rgba(255, 255, 255, 0.4);
   color: #fff;
   backdrop-filter: blur(8px);
@@ -188,10 +188,10 @@ ul.retro-badges li {
   background: rgba(0, 0, 0, 0.35);
   overflow: hidden;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   color: #fff;
-  padding: 6px 0;
+  padding: 8px 0;
   backdrop-filter: blur(4px);
 }
 

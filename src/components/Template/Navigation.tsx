@@ -22,19 +22,53 @@ export default function Navigation() {
       <Link href="/" className="site-logo" aria-label="Home">
         <svg
           className="logo-icon"
-          width="22"
-          height="22"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          width="40"
+          height="40"
+          viewBox="0 0 16 16"
+          shapeRendering="crispEdges"
           aria-hidden="true"
         >
-          <path d="M3 11.5 12 4l9 7.5" />
-          <path d="M5 10v10h14V10" />
-          <path d="M10 20v-6h4v6" />
+          {/* Sky / chimney */}
+          <rect x="11" y="2" width="2" height="3" fill="#8e4828" />
+          <rect x="11" y="2" width="2" height="1" fill="#a85c3f" />
+          {/* Roof — pixel triangle */}
+          <rect x="7" y="3" width="2" height="1" fill="#c5483b" />
+          <rect x="6" y="4" width="4" height="1" fill="#c5483b" />
+          <rect x="5" y="5" width="6" height="1" fill="#c5483b" />
+          <rect x="4" y="6" width="8" height="1" fill="#c5483b" />
+          <rect x="3" y="7" width="10" height="1" fill="#c5483b" />
+          {/* Roof shadow line */}
+          <rect
+            x="3"
+            y="7"
+            width="10"
+            height="1"
+            fill="#9c2f25"
+            opacity="0.5"
+          />
+          {/* Walls */}
+          <rect x="4" y="8" width="8" height="6" fill="#f0d8a8" />
+          {/* Wall shadow on right */}
+          <rect x="11" y="8" width="1" height="6" fill="#d4b986" />
+          {/* Door */}
+          <rect x="7" y="11" width="2" height="3" fill="#7a4a2a" />
+          <rect x="8" y="12" width="1" height="1" fill="#f5d442" />
+          {/* Window */}
+          <rect x="5" y="9" width="2" height="2" fill="#7ec8e3" />
+          <rect x="9" y="9" width="2" height="2" fill="#7ec8e3" />
+          {/* Window cross */}
+          <rect x="6" y="9" width="1" height="2" fill="#3a3a3a" opacity="0.5" />
+          <rect
+            x="9"
+            y="9"
+            width="2"
+            height="1"
+            fill="#3a3a3a"
+            opacity="0.3"
+            transform="translate(0 0.5)"
+          />
+          {/* Ground */}
+          <rect x="3" y="14" width="10" height="1" fill="#5cba6c" />
         </svg>
       </Link>
 

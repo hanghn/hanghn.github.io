@@ -128,9 +128,9 @@
 }
 
 .footer-copyright {
-  font-size: var(--text-xs);
+  font-size: var(--text-md);
   color: var(--color-fg-light);
-  opacity: 0.6;
+  opacity: 0.85;
   margin: 2rem 0 0;
   text-align: center;
 }
@@ -154,7 +154,7 @@
 
 .footer-links-label,
 .footer-social-label {
-  font-size: var(--text-xs);
+  font-size: var(--text-md);
   font-weight: var(--font-weight-bold);
   color: var(--color-fg-light);
   text-transform: uppercase;
@@ -170,7 +170,7 @@
 }
 
 .footer-links-grid a {
-  font-size: var(--text-sm);
+  font-size: var(--text-lg);
   color: var(--color-fg-light);
   text-decoration: none;
   transition: color var(--duration-fast) var(--ease-out);
