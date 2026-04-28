@@ -1,14 +1,13 @@
 import Link from 'next/link';
 
 import OnlineStatus from './OnlineStatus';
-import RetroExtras from './RetroExtras';
 import ThemePortrait from './ThemePortrait';
 
 export default function Hero() {
   return (
     <section className="hero">
       <div className="win-panel win-panel--glass hero-panel">
-        <div className="win-panel-titlebar">WELCOME.HTM</div>
+        <div className="win-panel-titlebar">WELCOME.HTML</div>
         <div className="win-panel-body">
           <div className="hero-content">
             <div className="hero-avatar">
@@ -47,8 +46,6 @@ export default function Hero() {
                 <span>★ thanks for stopping by ★</span>
               </div>
             </div>
-
-            <RetroExtras />
 
             <div className="hero-cta">
               <Link href="/about" className="button button-primary">
