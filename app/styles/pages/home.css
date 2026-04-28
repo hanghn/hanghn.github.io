@@ -161,6 +161,22 @@ body:has(.home-page)::before {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
+  animation: home-ken-burns 30s ease-in-out infinite alternate;
+}
+
+@keyframes home-ken-burns {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+  to {
+    transform: scale(1.08) translate(-1.5%, -1%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:has(.home-page)::before {
+    animation: none;
+  }
 }
 
 body:has(.home-page)::after {

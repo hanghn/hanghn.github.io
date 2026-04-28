@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 
 import routes from '@/data/routes';
 
+import AudioToggle from './AudioToggle';
 import Hamburger from './Hamburger';
 import ThemeToggle from './ThemeToggle';
 
@@ -53,6 +54,7 @@ export default function Navigation() {
       </nav>
 
       <div className="nav-actions">
+        <AudioToggle />
         <ThemeToggle />
         <Hamburger />
       </div>
