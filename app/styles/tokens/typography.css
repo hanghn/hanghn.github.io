@@ -27,15 +27,15 @@
   /* ===================
      FONT SIZES (relative units)
      =================== */
-  --text-2xs: 0.65em;
-  --text-xs: 0.75em;
-  --text-sm: 0.875em;
+  --text-2xs: 0.7em;
+  --text-xs: 0.8em;
+  --text-sm: 0.9em;
   --text-base: 1em;
-  --text-md: 1.1em;
-  --text-lg: 1.3em;
-  --text-xl: 1.6em;
-  --text-2xl: 2.2em;
-  --text-3xl: 2.75em;
+  --text-md: 1.15em;
+  --text-lg: 1.35em;
+  --text-xl: 1.7em;
+  --text-2xl: 2.4em;
+  --text-3xl: 3.1em;
 }
 
 @theme inline {

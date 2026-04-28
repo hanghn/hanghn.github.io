@@ -16,11 +16,11 @@
 .hero-panel {
   position: relative;
   z-index: 1;
-  width: clamp(320px, 78vw, 700px);
-  min-width: 320px;
-  min-height: 400px;
+  width: clamp(480px, 82vw, 880px);
+  min-width: 480px;
+  min-height: 600px;
   max-width: 95vw;
-  max-height: 90vh;
+  max-height: 92vh;
   margin: 3rem auto 0;
   color: #fff;
   will-change: transform;
@@ -37,14 +37,14 @@
 }
 
 /* As the panel shrinks, scale/hide things so the content still fits */
-@container heropanel (max-width: 500px) {
+@container heropanel (max-width: 480px) {
   .hero-avatar {
     width: 130px !important;
     height: 130px !important;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.25rem !important;
   }
   .hero-name {
-    font-size: clamp(1.4rem, 7cqi, 2.2rem) !important;
+    font-size: clamp(1.4rem, 6cqi, 2rem) !important;
   }
   .hero-tagline {
     font-size: 0.95rem !important;
@@ -55,23 +55,20 @@
   }
 }
 
-@container heropanel (max-height: 580px) {
+@container heropanel (max-height: 480px) {
   .retro-marquee {
+    display: none;
+  }
+  .hero-tagline {
     display: none;
   }
   .hero-status {
     margin-bottom: 0.75rem !important;
   }
   .hero-avatar {
-    width: 120px !important;
-    height: 120px !important;
-    margin-bottom: 1rem !important;
-  }
-}
-
-@container heropanel (max-height: 460px) {
-  .hero-tagline {
-    display: none;
+    width: 110px !important;
+    height: 110px !important;
+    margin-bottom: 0.75rem !important;
   }
 }
 
@@ -118,9 +115,9 @@
 .hero-plant {
   position: absolute;
   bottom: 100%;
-  right: 36px;
-  width: 110px;
-  height: 138px;
+  right: 40px;
+  width: 150px;
+  height: 188px;
   z-index: 2;
   pointer-events: none;
   image-rendering: pixelated;
@@ -191,12 +188,11 @@
 .hero-name {
   display: inline-flex;
   align-items: center;
-  gap: 0.15em;
-  flex-wrap: nowrap;
-  white-space: nowrap;
+  gap: 0.2em;
+  flex-wrap: wrap;
   justify-content: center;
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 6vw, 3.5rem);
+  font-size: clamp(1.8rem, 5cqi, 3.6rem);
   font-weight: var(--font-weight-black);
   letter-spacing: -0.03em;
   line-height: 1.05;
