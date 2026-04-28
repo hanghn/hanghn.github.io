@@ -52,8 +52,8 @@ export default function Hero() {
     const startHeight = target.offsetHeight;
 
     function handleMove(ev: MouseEvent) {
-      const newWidth = Math.max(320, startWidth + (ev.clientX - startX));
-      const newHeight = Math.max(400, startHeight + (ev.clientY - startY));
+      const newWidth = Math.max(480, startWidth + (ev.clientX - startX));
+      const newHeight = Math.max(600, startHeight + (ev.clientY - startY));
       target.style.width = `${newWidth}px`;
       target.style.height = `${newHeight}px`;
     }
