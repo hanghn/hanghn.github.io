@@ -8,7 +8,7 @@ import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Contact',
-  description: 'Contact Hang (Amber) Hang via email or LinkedIn.',
+  description: 'Contact Hang Hang via email or LinkedIn.',
   path: '/contact/',
 });
 

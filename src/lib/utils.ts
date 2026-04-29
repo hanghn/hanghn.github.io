@@ -4,7 +4,7 @@
 
 // Site configuration
 export const SITE_URL = 'https://hanghn.github.io';
-export const AUTHOR_NAME = 'Hang (Amber) Hang';
+export const AUTHOR_NAME = 'Hang Hang';
 export const TWITTER_HANDLE = '';
 
 // Image dimension constants

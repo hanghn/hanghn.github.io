@@ -8,7 +8,7 @@ import { createPageMetadata } from '@/lib/metadata';
 export const metadata: Metadata = createPageMetadata({
   title: 'About',
   description:
-    'Learn about Hang (Amber) Hang — Computer Science + Business student at Northeastern, currently TA-ing Foundations of Data Science and seeking Summer 2026 internships.',
+    'Learn about Hang Hang — Computer Science + Business student at Northeastern, currently TA-ing Foundations of Data Science and seeking Summer 2026 internships.',
   path: '/about/',
 });
 
@@ -23,10 +23,7 @@ export default function AboutPage() {
         <div className="about-layout">
           <aside className="about-sidebar" aria-hidden="true">
             <figure className="about-sidebar-figure">
-              <img
-                src="/images/about/IMG_2445.jpg"
-                alt="Hang Hang's hometown view"
-              />
+              <img src="/images/about/IMG_2445.jpg" alt="Hang Hang's hometown view" />
               <figcaption>Where I grew up — Shanghai.</figcaption>
             </figure>
 
@@ -36,8 +33,8 @@ export default function AboutPage() {
                 alt="At the Boston Seafood Expo translating between my parents and clients"
               />
               <figcaption>
-                Bilingual go-between for my parents and their clients at
-                Seafood Expo North America (Boston).
+                Bilingual go-between for my parents and their clients at Seafood Expo North America
+                (Boston).
               </figcaption>
             </figure>
           </aside>
