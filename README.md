@@ -5,8 +5,8 @@ Built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScr
 ## Run locally
 
 ```bash
-git clone https://github.com/hanghn/personal_site
-cd personal_site
+git clone https://github.com/hanghn/hanghn.github.io
+cd hanghn.github.io
 npm install
 npm run dev
 ```
