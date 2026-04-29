@@ -15,7 +15,7 @@ import { createPageMetadata } from '@/lib/metadata';
 export const metadata: Metadata = createPageMetadata({
   title: 'Resume',
   description:
-    'Resume of Hang (Amber) Hang — Northeastern Khoury CS+Business student. TA, J&J MedTech intern, private-equity intern, technical projects in Python, Java, C, and RISC-V.',
+    'Resume of Hang Hang — Northeastern Khoury CS+Business student. TA, J&J MedTech intern, private-equity intern, technical projects in Python, Java, C, and RISC-V.',
   path: '/resume/',
 });
 
