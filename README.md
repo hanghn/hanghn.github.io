@@ -5,8 +5,8 @@ Built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScr
 ## Run locally
 
 ```bash
-git clone https://github.com/hanghn/hanghn.github.io
-cd hanghn.github.io
+git clone https://github.com/hanghn/personal_site
+cd personal_site
 npm install
 npm run dev
 ```
@@ -28,7 +28,7 @@ Pushes to `main` deploy automatically to GitHub Pages.
 
 ## Credits
 
-Forked from [mldangelo/personal-site](https://github.com/mldangelo/personal-site) — thanks to Mike D'Angelo for the excellent template.
+Forked from [mldangelo/personal-site](https://github.com/mldangelo/personal-site) — thanks Michael D'Angelo for the excellent template.
 
 ## License
 
