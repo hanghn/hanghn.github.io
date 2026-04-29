@@ -1,4 +1,4 @@
-# hanghn.github.io
+# Hang's Personal Site
 
 Source code for my personal site: **[hanghn.github.io →](https://hanghn.github.io)**
 
