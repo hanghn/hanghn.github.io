@@ -1,7 +1,5 @@
 # Hang's Personal Site
 
-Source code for my personal site: **[hanghn.github.io →](https://hanghn.github.io)**
-
 Built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). Statically exported and deployed to GitHub Pages.
 
 ## Run locally
