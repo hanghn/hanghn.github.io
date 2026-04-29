@@ -2,7 +2,7 @@
 
 Source code for my personal site: **[hanghn.github.io →](https://hanghn.github.io)**
 
-Built with Next.js, React, TypeScript, and Tailwind CSS. Statically exported and deployed to GitHub Pages.
+Built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). Statically exported and deployed to GitHub Pages.
 
 ## Run locally
 

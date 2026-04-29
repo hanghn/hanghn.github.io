@@ -37,10 +37,34 @@ export default function Footer() {
         &copy; {new Date().getFullYear()} {AUTHOR_NAME}. Built with{' '}
         <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
           Next.js
-        </a>{' '}
-        &amp;{' '}
+        </a>
+        ,{' '}
         <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
           React
+        </a>
+        ,{' '}
+        <a
+          href="https://www.typescriptlang.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TypeScript
+        </a>
+        , and{' '}
+        <a
+          href="https://tailwindcss.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Tailwind CSS
+        </a>
+        . Statically exported and deployed to{' '}
+        <a
+          href="https://pages.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub Pages
         </a>
         .
       </p>

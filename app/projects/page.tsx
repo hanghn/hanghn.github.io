@@ -8,7 +8,7 @@ import { createPageMetadata } from '@/lib/metadata';
 export const metadata: Metadata = createPageMetadata({
   title: 'Projects',
   description:
-    'Technical projects by Hang (Amber) Hang — ML pipelines, Java OOD, C systems, and FPGA hardware design.',
+    'Technical projects by Hang Hang — ML pipelines, Java OOD, C systems, and FPGA hardware design.',
   path: '/projects/',
 });
 
