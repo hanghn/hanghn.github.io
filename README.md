@@ -1,4 +1,4 @@
-# Hang's Personal Site
+# Personal site
 
 Built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). Statically exported and deployed to GitHub Pages.
 
