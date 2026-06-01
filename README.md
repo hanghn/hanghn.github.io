@@ -28,7 +28,7 @@ Pushes to `main` deploy automatically to GitHub Pages.
 
 ## Credits
 
-Forked from [mldangelo/personal-site](https://github.com/mldangelo/personal-site) — thanks Michael D'Angelo for the excellent template.
+Forked from [mldangelo/personal-site](https://github.com/mldangelo/personal-site) — thanks Michael D'Angelo, for the template.
 
 ## License
 
