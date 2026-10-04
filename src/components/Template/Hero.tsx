@@ -150,9 +150,6 @@ export default function Hero() {
 
             <p className="hero-tagline">
               Welcome to my corner of the internet.
-              <br />
-              Think of this as my scrapbook — projects, experiments, half-formed
-              thoughts (maybe?).
             </p>
 
             <div className="hero-chips">
