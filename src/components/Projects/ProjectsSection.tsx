@@ -13,7 +13,7 @@ export default function ProjectsSection({
       <header className="projects-header">
         <Heading className="page-title">Projects</Heading>
         <p className="page-subtitle">
-          Some of the projects and experiments from my student years
+          Projects I've built over my college years
         </p>
       </header>
 
