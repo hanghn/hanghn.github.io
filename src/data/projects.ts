@@ -11,10 +11,10 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'Decoding Persuasion on Reddit',
-    subtitle: 'In progress · NLP · TF-IDF + LR, BiLSTM, RoBERTa',
+    title: 'Modeling Online Persuasion with NLP',
+    subtitle: 'In progress · Natural Language Processing',
     date: '2026-12-01',
-    desc: 'Currently working on this: given two replies to an r/ChangeMyView post, predict which one earned more upvotes, using about 41,000 comment pairs from the Stanford Human Preferences dataset. Compares TF-IDF with logistic regression, a BiLSTM, and a fine-tuned RoBERTa, and tests whether each model learns argument quality or shortcuts like comment length.',
+    desc: 'Currently working on this: a natural language processing project on what makes an argument persuasive online. Compares a statistical model (TF-IDF with logistic regression), a neural model (BiLSTM), and a pretrained transformer (RoBERTa) on about 41,000 pairs of Reddit comments, and tests whether each model learns argument quality or shortcuts like comment length.',
     tech: ['Python', 'PyTorch', 'scikit-learn', 'Hugging Face'],
     featured: true,
   },
