@@ -19,7 +19,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 const siteDescription =
-  'Computer Science + Business student at Northeastern University — Khoury College. Currently a TA for Foundations of Data Science. Seeking Summer 2026 internships in data science, ML, fintech, or software engineering.';
+  'Computer Science + Business student at Northeastern University — Khoury College. Currently a TA for Foundations of Data Science. Seeking Spring 2027 full-time roles in data science, ML, fintech, or software engineering.';
 
 export const metadata: Metadata = {
   title: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     'Data Science',
     'Machine Learning',
     'Boston',
-    'Summer 2026 Internship',
+    'Spring 2027 Full-Time',
   ],
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,

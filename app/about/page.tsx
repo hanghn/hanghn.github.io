@@ -7,7 +7,7 @@ import { createPageMetadata } from '@/lib/metadata';
 export const metadata: Metadata = createPageMetadata({
   title: 'About',
   description:
-    'Learn about Hang Hang — Computer Science + Business student at Northeastern, currently TA-ing Foundations of Data Science and seeking Summer 2026 internships.',
+    'Learn about Hang Hang — Computer Science + Business student at Northeastern, currently TA-ing Foundations of Data Science and seeking Spring 2027 full-time roles.',
   path: '/about/',
 });
 
