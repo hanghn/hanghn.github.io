@@ -11,6 +11,14 @@ export interface Project {
 
 const data: Project[] = [
   {
+    title: 'What Makes a Persuasive Argument on Reddit?',
+    subtitle: 'In progress · NLP · TF-IDF + LR, BiLSTM, RoBERTa',
+    date: '2026-12-01',
+    desc: 'Currently working on this with a 4-person team: given two replies to an r/ChangeMyView post, predict which one earned more upvotes, using about 41,000 comment pairs from the Stanford Human Preferences dataset. We compare TF-IDF with logistic regression, a BiLSTM, and a fine-tuned RoBERTa, and test whether each model learns argument quality or shortcuts like comment length.',
+    tech: ['Python', 'PyTorch', 'scikit-learn', 'Hugging Face'],
+    featured: true,
+  },
+  {
     title: 'Exoplanet Classifier',
     subtitle: 'NASA Kepler dataset · Gradient Boosting · PyTorch RNNs',
     link: 'https://github.com/hanghn/Exoplanet-Classifier',
@@ -35,17 +43,6 @@ const data: Project[] = [
       'Socket.io',
       'Playwright',
     ],
-    featured: true,
-  },
-  {
-    title: 'S&P 500 ESG Risk & Valuation',
-    subtitle:
-      'OLS, Polynomial Regression, PCA, K-Means — from scratch in NumPy',
-    link: 'https://github.com/hanghn/Stock-Prices-ESG-Score-Analysis',
-    image: '/images/projects/sp500-esg.png',
-    date: '2025-04-01',
-    desc: 'Implemented Ordinary Least Squares and polynomial regression from scratch in NumPy via the normal equation on a 100-company S&P 500 dataset (Yahoo Finance API + BeautifulSoup), validated with hand-rolled Leave-One-Out Cross Validation (MSE, R², residual plots). Used PCA (>90% variance retained) and K-Means (k=4) to segment firms into interpretable ESG-financial risk tiers. Co-authored the final report with a 4-person team.',
-    tech: ['Python', 'NumPy', 'pandas', 'BeautifulSoup', 'PCA', 'K-Means'],
     featured: true,
   },
   {
