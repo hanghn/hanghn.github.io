@@ -19,7 +19,9 @@ export default function ContactSection({
         <div className="win-panel-body">
           <div className="contact-content">
             <div className="contact-email-block">
-              <EmailLink />
+              <EmailLink label="Personal email" email="hanghn559@gmail.com" />
+              <span className="contact-email-or">or</span>
+              <EmailLink label="School email" email="hang.h@northeastern.edu" />
             </div>
 
             <div className="contact-divider">
