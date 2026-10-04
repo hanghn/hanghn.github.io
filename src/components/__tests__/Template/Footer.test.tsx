@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
+import { AUTHOR_NAME } from '@/lib/utils';
+
 import Footer from '../../Template/Footer';
 
 describe('Footer', () => {
@@ -11,58 +13,13 @@ describe('Footer', () => {
     expect(footer).toBeInTheDocument();
   });
 
-  it('displays the name and role', () => {
+  it('shows only the copyright line', () => {
     render(<Footer />);
 
-    expect(screen.getByText("Michael D'Angelo")).toBeInTheDocument();
-    expect(
-      screen.getByText('Member of the Technical Staff at OpenAI'),
-    ).toBeInTheDocument();
-  });
-
-  it('displays the current year in copyright', () => {
-    render(<Footer />);
-
-    const currentYear = new Date().getFullYear().toString();
-    expect(
-      screen.getByText(new RegExp(`© ${currentYear}`)),
-    ).toBeInTheDocument();
-  });
-
-  it('renders navigation links', () => {
-    render(<Footer />);
-
-    expect(screen.getByRole('link', { name: /about/i })).toHaveAttribute(
-      'href',
-      '/#about',
+    const currentYear = new Date().getFullYear();
+    expect(screen.getByRole('contentinfo')).toHaveTextContent(
+      new RegExp(`^© ${currentYear} ${AUTHOR_NAME}$`),
     );
-    expect(screen.getByRole('link', { name: /resume/i })).toHaveAttribute(
-      'href',
-      '/#resume',
-    );
-    expect(screen.getByRole('link', { name: /projects/i })).toHaveAttribute(
-      'href',
-      '/#projects',
-    );
-    expect(screen.getByRole('link', { name: /contact/i })).toHaveAttribute(
-      'href',
-      '/#contact',
-    );
-  });
-
-  it('renders contact icons section', () => {
-    render(<Footer />);
-
-    // Contact icons are rendered via ContactIcons component
-    const socialSection = document.querySelector('.footer-social');
-    expect(socialSection).toBeInTheDocument();
-    expect(screen.getByText('Connect')).toBeInTheDocument();
-  });
-
-  it('has link to home from avatar', () => {
-    render(<Footer />);
-
-    const avatarLink = document.querySelector('.footer-avatar');
-    expect(avatarLink).toHaveAttribute('href', '/');
+    expect(screen.queryByRole('link')).not.toBeInTheDocument();
   });
 });
