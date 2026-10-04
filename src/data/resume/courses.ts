@@ -112,16 +112,34 @@ const courses: Course[] = [
     link: NEU_CATALOG,
     university: NEU,
   },
-  // Scheduled
   {
-    title: 'Fundamentals of Software Engineering (scheduled)',
+    title: 'Fundamentals of Software Engineering',
     number: 'CS 4530',
     link: NEU_CATALOG_CS,
     university: NEU,
   },
   {
-    title: 'Artificial Intelligence (scheduled)',
+    title: 'Artificial Intelligence',
     number: 'CS 4100',
+    link: NEU_CATALOG_CS,
+    university: NEU,
+  },
+  {
+    title: 'Machine Learning and Data Mining 1',
+    number: 'DS 4400',
+    link: NEU_CATALOG,
+    university: NEU,
+  },
+  // Ongoing
+  {
+    title: 'Theory of Computation (ongoing)',
+    number: 'CS 3800',
+    link: NEU_CATALOG_CS,
+    university: NEU,
+  },
+  {
+    title: 'Natural Language Processing (ongoing)',
+    number: 'CS 4120',
     link: NEU_CATALOG_CS,
     university: NEU,
   },

@@ -14,16 +14,18 @@ export default function Cell({ data }: CellProps) {
 
   const cardContent = (
     <>
-      <div className="project-card-image">
-        <Image
-          src={image}
-          alt={title}
-          width={PROJECT_IMAGE.width}
-          height={PROJECT_IMAGE.height}
-          sizes="(max-width: 600px) 100vw, 50vw"
-        />
-        <div className="project-card-overlay" />
-      </div>
+      {image && (
+        <div className="project-card-image">
+          <Image
+            src={image}
+            alt={title}
+            width={PROJECT_IMAGE.width}
+            height={PROJECT_IMAGE.height}
+            sizes="(max-width: 600px) 100vw, 50vw"
+          />
+          <div className="project-card-overlay" />
+        </div>
+      )}
 
       <div className="project-card-content">
         <header className="project-card-header">
