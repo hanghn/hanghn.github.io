@@ -6,7 +6,7 @@ That front-row seat is part of why I ended up studying **Computer Science + Busi
 
 The factory floor and the codebase don't always look related — but both are about figuring out the messy parts of a system, then making it run a little smoother. That's the thread I keep pulling on.
 
-I'm currently exploring **Summer 2026 internships** in software engineering, data science, ML/AI, or anywhere these areas tangle together. Feel free to browse my site, and I'm always happy to chat if anything sparks your interest. :D
+I'm currently exploring **Spring 2027 full-time roles** in software engineering, data science, ML/AI, or anywhere these areas tangle together. Feel free to browse my site, and I'm always happy to chat if anything sparks your interest. :D
 
 # A Bit More About Me
 
@@ -15,5 +15,5 @@ I'm currently exploring **Summer 2026 internships** in software engineering, dat
 
 # What I'm Looking For
 
-I'm actively seeking **Summer 2026 internships** in data science, machine learning / AI, or software engineering — or any similar field that intersects with any of these. I'm based in Boston but open to relocation, and I'm authorized to work in the U.S. without sponsorship now or in the future.
+I'm actively seeking **full-time roles starting Spring 2027** in data science, machine learning / AI, or software engineering — or any similar field that intersects with any of these. I'm based in Boston but open to relocation, and I'm authorized to work in the U.S. without sponsorship now or in the future.
 `;

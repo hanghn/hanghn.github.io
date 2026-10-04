@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useRef } from 'react';
 
 import CharacterAvatar from './CharacterAvatar';
-import OnlineStatus from './OnlineStatus';
 import ThemePortrait from './ThemePortrait';
 
 export default function Hero() {
@@ -157,21 +156,11 @@ export default function Hero() {
             </p>
 
             <div className="hero-chips">
-              <span className="hero-chip">Open to Summer 2026 Internships</span>
-              <span className="hero-chip">Khoury · CS + Business</span>
+              <span className="hero-chip">
+                Open to Spring 2027 Full-Time Roles
+              </span>
+              <span className="hero-chip">Khoury · CS</span>
               <span className="hero-chip">Boston, MA</span>
-            </div>
-
-            <div className="hero-status">
-              <OnlineStatus />
-            </div>
-
-            <div className="retro-marquee" aria-hidden="true">
-              <div className="retro-marquee-track">
-                <span>last updated: april 28 2026</span>
-                <span>·</span>
-                <span>★ thanks for stopping by ★</span>
-              </div>
             </div>
 
             <div className="hero-cta">
