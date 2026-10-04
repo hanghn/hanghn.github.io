@@ -143,6 +143,12 @@ const courses: Course[] = [
     link: NEU_CATALOG_CS,
     university: NEU,
   },
+  {
+    title: 'Applied Financial Econometrics and Data Modeling (ongoing)',
+    number: 'FINA 4350',
+    link: NEU_CATALOG,
+    university: NEU,
+  },
 ];
 
 export default courses;
