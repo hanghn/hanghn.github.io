@@ -12,9 +12,7 @@ export default function ProjectsSection({
     <section className="projects-page">
       <header className="projects-header">
         <Heading className="page-title">Projects</Heading>
-        <p className="page-subtitle">
-          Projects I've built over my college years
-        </p>
+        <p className="page-subtitle">Projects I've built throughout college</p>
       </header>
 
       <div className="win-panel">

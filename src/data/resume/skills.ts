@@ -195,9 +195,9 @@ const skills: Skill[] = [
 const CATEGORY_COLORS: { color: string; textColor: 'dark' | 'light' }[] = [
   { color: 'var(--color-skill-1)', textColor: 'light' }, // #6968b3 - dark bg
   { color: 'var(--color-skill-2)', textColor: 'dark' }, // #37b1f5 - light bg
-  { color: 'var(--color-skill-3)', textColor: 'light' }, // #40494e - dark bg
-  { color: 'var(--color-skill-4)', textColor: 'light' }, // #515dd4 - dark bg
   { color: 'var(--color-skill-5)', textColor: 'dark' }, // #e47272 - light bg
+  { color: 'var(--color-skill-4)', textColor: 'light' }, // #515dd4 - dark bg
+  { color: 'var(--color-skill-3)', textColor: 'light' }, // #40494e - dark bg
   { color: 'var(--color-skill-6)', textColor: 'dark' }, // #cc7b94 - light bg
 ];
 
