@@ -19,7 +19,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 const siteDescription =
-  'Computer Science + Business student at Northeastern University — Khoury College. Currently a TA for Foundations of Data Science. Seeking Spring 2027 full-time roles in data science, ML, fintech, or software engineering.';
+  'Computer Science + Business student at Northeastern University — Khoury College. Currently a TA for Foundations of Data Science. Seeking Spring 2027 full-time roles in ML, fintech, or software engineering.';
 
 export const metadata: Metadata = {
   title: {
