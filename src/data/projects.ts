@@ -24,6 +24,7 @@ const data: Project[] = [
     title: 'PlayNexus — Multiplayer Web Gaming Platform',
     subtitle: 'Render-hosted demo · allow 10-15 seconds for the first load',
     link: 'https://su26-group-111.onrender.com/login',
+    image: '/images/projects/playnexus.png',
     date: '2026-08-01',
     desc: 'Designed full-stack Cribbage (Node/TypeScript, Supabase, Socket.io, React) with a configurable AI opponent, backed by a GitHub Actions CI/CD pipeline (ESLint, Prettier, Vitest, Playwright) and ~95% branch coverage. Engineered the React UI to WCAG standards with keyboard-navigable card selection, ARIA live regions for score updates, and screen-reader-friendly card labels.',
     tech: [
