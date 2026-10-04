@@ -2,10 +2,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import data from '@/data/contact';
 
+// Email addresses are written out above the icons, so only link profiles here
+const profiles = data.filter((s) => !s.link.startsWith('mailto:'));
+
 export default function ContactIcons() {
   return (
     <ul className="icons">
-      {data.map((s) => (
+      {profiles.map((s) => (
         <li key={s.label}>
           <a
             href={s.link}

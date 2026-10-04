@@ -270,6 +270,20 @@
   margin-bottom: 0.75rem;
 }
 
+.contact-email-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: var(--text-md);
+  color: var(--color-fg-light);
+}
+
+.contact-email-or {
+  display: block;
+  margin: 1.25rem 0;
+  font-size: var(--text-md);
+  color: var(--color-fg-light);
+}
+
 .contact-email-link {
   display: inline-flex;
   align-items: baseline;
@@ -331,8 +345,8 @@
   gap: 1rem;
   margin-bottom: 1.5rem;
   color: var(--color-fg-light);
-  font-size: var(--text-sm);
-  max-width: 280px;
+  font-size: var(--text-md);
+  max-width: 340px;
   margin-left: auto;
   margin-right: auto;
 }
