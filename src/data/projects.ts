@@ -2,7 +2,7 @@ export interface Project {
   title: string;
   subtitle?: string;
   link?: string;
-  image: string;
+  image?: string;
   date: string;
   desc: string;
   tech?: string[];
@@ -11,9 +11,35 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'S&P 500 ESG Risk & Valuation ML Pipeline',
+    title: 'Exoplanet Classifier',
+    subtitle: 'NASA Kepler dataset · Gradient Boosting · PyTorch RNNs',
+    link: 'https://github.com/AllanKafig/Exoplanet-Classifier',
+    date: '2026-06-01',
+    desc: 'Built an end-to-end ML pipeline classifying 6,640 NASA Kepler light curves using from-scratch Gradient Boosting and PyTorch RNNs, achieving 0.969 ROC-AUC, evaluated with cross-validation and ROC-AUC comparison across models. Constructed scalable pipelines for feature extraction and candidate generation, improved RNN performance through preprocessing and hyperparameter tuning, and developed evaluation visualizations to compare model performance.',
+    tech: ['Python', 'PyTorch', 'Gradient Boosting', 'RNNs'],
+    featured: true,
+  },
+  {
+    title: 'PlayNexus — Multiplayer Web Gaming Platform',
+    subtitle: 'Render-hosted demo · allow 10-15 seconds for the first load',
+    link: 'https://su26-group-111.onrender.com/login',
+    date: '2026-08-01',
+    desc: 'Designed full-stack Cribbage (Node/TypeScript, Supabase, Socket.io, React) with a configurable AI opponent, backed by a GitHub Actions CI/CD pipeline (ESLint, Prettier, Vitest, Playwright) and ~95% branch coverage. Engineered the React UI to WCAG standards with keyboard-navigable card selection, ARIA live regions for score updates, and screen-reader-friendly card labels.',
+    tech: [
+      'TypeScript',
+      'React',
+      'Node.js',
+      'Supabase',
+      'Socket.io',
+      'Playwright',
+    ],
+    featured: true,
+  },
+  {
+    title: 'S&P 500 ESG Risk & Valuation',
     subtitle:
       'OLS, Polynomial Regression, PCA, K-Means — from scratch in NumPy',
+    link: 'https://github.com/hanghn/Stock-Prices-ESG-Score-Analysis',
     image: '/images/projects/sp500-esg.png',
     date: '2025-04-01',
     desc: 'Implemented Ordinary Least Squares and polynomial regression from scratch in NumPy via the normal equation on a 100-company S&P 500 dataset (Yahoo Finance API + BeautifulSoup), validated with hand-rolled Leave-One-Out Cross Validation (MSE, R², residual plots). Used PCA (>90% variance retained) and K-Means (k=4) to segment firms into interpretable ESG-financial risk tiers. Co-authored the final report with a 4-person team.',
