@@ -11,7 +11,7 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'What Makes a Persuasive Argument on Reddit?',
+    title: 'Decoding Persuasion on Reddit',
     subtitle: 'In progress · NLP · TF-IDF + LR, BiLSTM, RoBERTa',
     date: '2026-12-01',
     desc: 'Currently working on this: given two replies to an r/ChangeMyView post, predict which one earned more upvotes, using about 41,000 comment pairs from the Stanford Human Preferences dataset. Compares TF-IDF with logistic regression, a BiLSTM, and a fine-tuned RoBERTa, and tests whether each model learns argument quality or shortcuts like comment length.',
