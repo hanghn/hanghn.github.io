@@ -9,7 +9,7 @@ I'm currently exploring **Spring 2027 full-time roles** in software engineering.
 # A Bit More About Me
 
 - For over two years, I've helped fellow international students adjust to life in Boston as a Global Student Ambassador with NU's Global Pathway Program.
-- Outside of school, I like exploring cafés, streetwear brands, and digging through GitHub for interesting open-source projects.
+- Outside of school, I like exercising, grabbing coffee and chatting with friends, and digging through GitHub for interesting open-source projects.
 
 # What I'm Looking For
 
