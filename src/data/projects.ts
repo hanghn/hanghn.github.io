@@ -14,7 +14,7 @@ const data: Project[] = [
     title: 'What Makes a Persuasive Argument on Reddit?',
     subtitle: 'In progress · NLP · TF-IDF + LR, BiLSTM, RoBERTa',
     date: '2026-12-01',
-    desc: 'Currently working on this with a 4-person team: given two replies to an r/ChangeMyView post, predict which one earned more upvotes, using about 41,000 comment pairs from the Stanford Human Preferences dataset. We compare TF-IDF with logistic regression, a BiLSTM, and a fine-tuned RoBERTa, and test whether each model learns argument quality or shortcuts like comment length.',
+    desc: 'Currently working on this: given two replies to an r/ChangeMyView post, predict which one earned more upvotes, using about 41,000 comment pairs from the Stanford Human Preferences dataset. Compares TF-IDF with logistic regression, a BiLSTM, and a fine-tuned RoBERTa, and tests whether each model learns argument quality or shortcuts like comment length.',
     tech: ['Python', 'PyTorch', 'scikit-learn', 'Hugging Face'],
     featured: true,
   },
