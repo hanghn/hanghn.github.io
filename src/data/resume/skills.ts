@@ -12,67 +12,97 @@ export interface Category {
 }
 
 const skills: Skill[] = [
-  // Languages
+  // Programming & Technologies
   {
     title: 'Python',
     competency: 5,
-    category: ['Languages', 'Data Science'],
+    category: ['Programming & Technologies'],
   },
   {
     title: 'Java',
     competency: 4,
-    category: ['Languages', 'Software Engineering'],
+    category: ['Programming & Technologies'],
   },
   {
     title: 'C',
     competency: 4,
-    category: ['Languages', 'Systems'],
+    category: ['Programming & Technologies'],
   },
   {
-    title: 'SQL (MySQL)',
+    title: 'TypeScript / JavaScript',
     competency: 4,
-    category: ['Languages', 'Databases'],
+    category: ['Programming & Technologies'],
+  },
+  {
+    title: 'SQL',
+    competency: 4,
+    category: ['Programming & Technologies'],
+  },
+  {
+    title: 'Vitest',
+    competency: 4,
+    category: ['Programming & Technologies'],
+  },
+  {
+    title: 'React',
+    competency: 4,
+    category: ['Programming & Technologies'],
+  },
+  {
+    title: 'Node.js',
+    competency: 4,
+    category: ['Programming & Technologies'],
+  },
+  {
+    title: 'Linux (Ubuntu)',
+    competency: 4,
+    category: ['Programming & Technologies'],
+  },
+  {
+    title: 'Socket.io',
+    competency: 4,
+    category: ['Programming & Technologies'],
+  },
+  {
+    title: 'Supabase',
+    competency: 4,
+    category: ['Programming & Technologies'],
   },
   {
     title: 'x86 & RISC-V Assembly',
     competency: 3,
-    category: ['Languages', 'Systems'],
-  },
-  // Data Science
-  {
-    title: 'Pandas',
-    competency: 5,
-    category: ['Data Science'],
+    category: ['Programming & Technologies'],
   },
   {
-    title: 'NumPy',
-    competency: 5,
-    category: ['Data Science'],
-  },
-  {
-    title: 'Matplotlib',
+    title: 'Data Encoding / Decoding',
     competency: 4,
-    category: ['Data Science'],
+    category: ['Programming & Technologies'],
   },
+  // Machine Learning & Data
   {
-    title: 'Jupyter Notebook',
+    title: 'PyTorch',
     competency: 4,
-    category: ['Data Science'],
+    category: ['Machine Learning & Data'],
   },
   {
-    title: 'Regression (OLS, Polynomial)',
+    title: 'Regression (Logistic, Polynomial, Ridge/Lasso)',
     competency: 4,
-    category: ['Data Science'],
+    category: ['Machine Learning & Data'],
   },
   {
-    title: 'PCA & K-Means',
+    title: 'Gradient Boosting',
     competency: 4,
-    category: ['Data Science'],
+    category: ['Machine Learning & Data'],
   },
   {
-    title: 'BeautifulSoup / Web Scraping',
-    competency: 3,
-    category: ['Data Science'],
+    title: 'RNNs',
+    competency: 4,
+    category: ['Machine Learning & Data'],
+  },
+  {
+    title: 'Feature Engineering',
+    competency: 4,
+    category: ['Machine Learning & Data'],
   },
   // Software Engineering
   {
@@ -81,7 +111,7 @@ const skills: Skill[] = [
     category: ['Software Engineering'],
   },
   {
-    title: 'Design Patterns (MVC, Builder, Adapter, etc.)',
+    title: 'Design Patterns',
     competency: 4,
     category: ['Software Engineering'],
   },
@@ -91,62 +121,65 @@ const skills: Skill[] = [
     category: ['Software Engineering'],
   },
   {
-    title: 'Mocking & Stubbing',
-    competency: 3,
+    title: 'TDD',
+    competency: 4,
     category: ['Software Engineering'],
   },
   {
-    title: 'Java Swing GUIs',
-    competency: 3,
+    title: 'Refactoring',
+    competency: 4,
+    category: ['Software Engineering'],
+  },
+  {
+    title: 'HTTP / REST APIs',
+    competency: 4,
+    category: ['Software Engineering'],
+  },
+  {
+    title: 'CI/CD',
+    competency: 4,
+    category: ['Software Engineering'],
+  },
+  {
+    title: 'Agile',
+    competency: 4,
     category: ['Software Engineering'],
   },
   // Systems & Hardware
   {
-    title: 'Digital Logic / FSMs',
+    title: 'Digital Logic Design',
     competency: 4,
-    category: ['Systems'],
+    category: ['Systems & Hardware'],
   },
   {
-    title: 'CPU & ALU Design',
-    competency: 4,
-    category: ['Systems'],
+    title: 'Instruction Set Architecture',
+    competency: 3,
+    category: ['Systems & Hardware'],
+  },
+  {
+    title: 'Memory Systems',
+    competency: 3,
+    category: ['Systems & Hardware'],
   },
   {
     title: 'FPGA Development',
     competency: 3,
-    category: ['Systems'],
+    category: ['Systems & Hardware'],
   },
   {
-    title: 'Memory Systems & ISA',
-    competency: 3,
-    category: ['Systems'],
-  },
-  // Tooling
-  {
-    title: 'Linux (Ubuntu)',
+    title: 'ALU Implementation',
     competency: 4,
-    category: ['Tooling'],
+    category: ['Systems & Hardware'],
   },
   {
-    title: 'Git / GitHub Codespaces',
+    title: 'Digital Circuit Simulation',
     competency: 4,
-    category: ['Tooling'],
+    category: ['Systems & Hardware'],
   },
   {
-    title: 'VS Code',
+    title: 'Performance Optimization',
     competency: 4,
-    category: ['Tooling'],
-  },
-  {
-    title: 'Valgrind',
-    competency: 3,
-    category: ['Tooling'],
-  },
-  // Databases
-  {
-    title: 'Database Design',
-    competency: 3,
-    category: ['Databases'],
+    category: ['Systems & Hardware'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
