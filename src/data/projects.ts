@@ -11,7 +11,7 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'Modeling Online Persuasion with NLP',
+    title: 'Modeling Persuasion on Reddit with NLP',
     subtitle: 'In progress · Natural Language Processing',
     date: '2026-12-01',
     desc: 'Currently working on this: a natural language processing project on what makes an argument persuasive online. Compares a statistical model (TF-IDF with logistic regression), a neural model (BiLSTM), and a pretrained transformer (RoBERTa) on about 41,000 pairs of Reddit comments, and tests whether each model learns argument quality or shortcuts like comment length.',
