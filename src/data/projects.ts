@@ -14,6 +14,7 @@ const data: Project[] = [
     title: 'Exoplanet Classifier',
     subtitle: 'NASA Kepler dataset · Gradient Boosting · PyTorch RNNs',
     link: 'https://github.com/AllanKafig/Exoplanet-Classifier',
+    image: '/images/projects/exoplanet-transit.jpg',
     date: '2026-06-01',
     desc: 'Built an end-to-end ML pipeline classifying 6,640 NASA Kepler light curves using from-scratch Gradient Boosting and PyTorch RNNs, achieving 0.969 ROC-AUC, evaluated with cross-validation and ROC-AUC comparison across models. Constructed scalable pipelines for feature extraction and candidate generation, improved RNN performance through preprocessing and hyperparameter tuning, and developed evaluation visualizations to compare model performance.',
     tech: ['Python', 'PyTorch', 'Gradient Boosting', 'RNNs'],

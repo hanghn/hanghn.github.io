@@ -16,7 +16,7 @@ export default function ContactIcons() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={s.icon} className="size-5" />
+            <FontAwesomeIcon icon={s.icon} className="size-8" />
           </a>
         </li>
       ))}
