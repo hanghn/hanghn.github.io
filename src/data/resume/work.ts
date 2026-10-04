@@ -38,11 +38,11 @@ const work: Position[] = [
     summary: `Worked on the DePuy Synthes orthopedics business in Raynham, MA — a mix of contract analytics,
     Python automation, and business-strategy deliverables.`,
     highlights: [
-      "Analyzed J&J's customer hierarchy and contract strategies across 10+ parent and 50+ standalone DePuy Synthes contracts to reconcile billing and ensure invoicing accuracy.",
-      'Developed an Excel dashboard comparing price erosion to sales growth on key DePuy platforms to drive margin-recovery insights.',
       'Built a Python automation pipeline that batch-processed ~1,200 customer directories and used pattern matching to retrieve Requests for Proposals, reducing quote preparation time by 30%.',
-      'Led creation of an ~80-page Ethicon business overview deck across all key surgical platforms, coordinating marketing-partner interviews to accelerate new-hire ramp-up.',
       'Engineered an Excel ETL pipeline consolidating 4+ disparate workbooks into a 4M+ data-point master and automating leadership reorg updates.',
+      'Developed an Excel dashboard comparing price erosion to sales growth on key DePuy platforms to drive margin-recovery insights.',
+      "Analyzed J&J's customer hierarchy and contract strategies across 10+ parent and 50+ standalone DePuy Synthes contracts to reconcile billing and ensure invoicing accuracy.",
+      'Led creation of an ~80-page Ethicon business overview deck across all key surgical platforms, coordinating marketing-partner interviews to accelerate new-hire ramp-up.',
     ],
   },
   {
