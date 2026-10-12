@@ -139,7 +139,7 @@ export default function Hero() {
         <div className="win-panel-body">
           <div className="hero-content">
             <div className="hero-avatar">
-              <ThemePortrait width={340} height={340} priority />
+              <ThemePortrait width={460} height={345} priority />
             </div>
 
             <h1 className="hero-title">
