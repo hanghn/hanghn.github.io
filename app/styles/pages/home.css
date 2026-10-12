@@ -214,7 +214,7 @@
 /* As the panel shrinks, scale/hide things so the content still fits */
 @container heropanel (max-width: 480px) {
   .hero-avatar {
-    width: 240px !important;
+    width: 210px !important;
     height: auto !important;
     margin-bottom: 1.25rem !important;
   }
@@ -291,10 +291,10 @@
 
 /* Portrait */
 .hero-avatar {
-  width: min(100%, 460px);
-  aspect-ratio: 4 / 3;
+  width: min(100%, 420px);
+  aspect-ratio: 1;
   margin: 0 auto 2rem;
-  border-radius: 18px;
+  border-radius: 50%;
   position: relative;
   box-shadow:
     var(--shadow-xl),
@@ -314,7 +314,7 @@
     transparent 50%,
     var(--color-accent-subtle) 100%
   );
-  border-radius: 22px;
+  border-radius: 50%;
   z-index: -1;
   opacity: 0;
   transition: opacity var(--duration-normal) var(--ease-out);
@@ -342,7 +342,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 50%;
 }
 
 /* Name */
@@ -613,7 +613,7 @@ body:has(.home-page)::after {
   }
 
   .hero-avatar {
-    width: min(100%, 340px);
+    width: min(100%, 320px);
     margin-bottom: 2rem;
   }
 
